@@ -1115,7 +1115,7 @@ namespace helix::canvasui
         i32 at = PositionAt(*this, eventData);
         bool shift = false;
         for (const engine::InputEvent& e : engine::InputFeed::Frame())
-            if (e.event.type == platform::EventType::MouseDown)
+            if (e.display == 0 && e.event.type == platform::EventType::MouseDown)
                 shift = (e.event.modifiers & platform::ModShift) != 0;
         if (eventData->clickCount() == 2)
             SetSelection(WordStart(at), WordEnd(at));
@@ -1169,6 +1169,8 @@ namespace helix::canvasui
             {
                 if (!focused_)
                     break;
+                if (e.display != 0)
+                    continue;
                 switch (e.event.type)
                 {
                 case platform::EventType::KeyDown:

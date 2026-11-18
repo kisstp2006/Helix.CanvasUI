@@ -99,6 +99,9 @@ namespace helix::canvasui
                 }
                 for (const engine::InputEvent& e : engine::InputFeed::Frame())
                 {
+                    // The canvases' input is the main display's.
+                    if (e.display != 0)
+                        continue;
                     const platform::Event& ev = e.event;
                     switch (ev.type)
                     {

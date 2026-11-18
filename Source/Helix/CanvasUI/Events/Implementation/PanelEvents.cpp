@@ -207,7 +207,7 @@ namespace helix::canvasui
             return;
         keysFrame_ = frame;
         for (const engine::InputEvent& e : engine::InputFeed::Frame())
-            switch (e.event.type)
+            switch (e.display != 0 ? platform::EventType::None : e.event.type)
             {
             case platform::EventType::KeyDown: events->KeyDown(u16(e.event.key.key), e.event.modifiers, e.time); break;
             case platform::EventType::KeyUp: events->KeyUp(u16(e.event.key.key), e.event.modifiers, e.time); break;
