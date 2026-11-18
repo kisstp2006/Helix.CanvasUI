@@ -1,0 +1,2126 @@
+type,member,signature
+CanvasUI.AnimationTriggers,.ctor,AnimationTriggers()
+CanvasUI.AnimationTriggers,disabledTrigger,string disabledTrigger { get; set; }
+CanvasUI.AnimationTriggers,highlightedTrigger,string highlightedTrigger { get; set; }
+CanvasUI.AnimationTriggers,normalTrigger,string normalTrigger { get; set; }
+CanvasUI.AnimationTriggers,operators,"Equality(AnimationTriggers, AnimationTriggers) / Inequality(AnimationTriggers, AnimationTriggers) / Implicit(AnimationTriggers)"
+CanvasUI.AnimationTriggers,pressedTrigger,string pressedTrigger { get; set; }
+CanvasUI.AnimationTriggers,selectedTrigger,string selectedTrigger { get; set; }
+CanvasUI.AspectRatioFitter,.ctor,AspectRatioFitter()
+CanvasUI.AspectRatioFitter,IsActive,bool IsActive()
+CanvasUI.AspectRatioFitter,IsAspectModeValid,bool IsAspectModeValid()
+CanvasUI.AspectRatioFitter,IsComponentValidOnObject,bool IsComponentValidOnObject()
+CanvasUI.AspectRatioFitter,SetLayoutHorizontal,void SetLayoutHorizontal()
+CanvasUI.AspectRatioFitter,SetLayoutVertical,void SetLayoutVertical()
+CanvasUI.AspectRatioFitter,aspectMode,AspectRatioFitter.AspectMode aspectMode { get; set; }
+CanvasUI.AspectRatioFitter,aspectRatio,float aspectRatio { get; set; }
+CanvasUI.AspectRatioFitter.AspectMode,EnvelopeParent,CanvasUI.AspectRatioFitter.AspectMode.EnvelopeParent = 4
+CanvasUI.AspectRatioFitter.AspectMode,FitInParent,CanvasUI.AspectRatioFitter.AspectMode.FitInParent = 3
+CanvasUI.AspectRatioFitter.AspectMode,HeightControlsWidth,CanvasUI.AspectRatioFitter.AspectMode.HeightControlsWidth = 2
+CanvasUI.AspectRatioFitter.AspectMode,None,CanvasUI.AspectRatioFitter.AspectMode.None = 0
+CanvasUI.AspectRatioFitter.AspectMode,WidthControlsHeight,CanvasUI.AspectRatioFitter.AspectMode.WidthControlsHeight = 1
+CanvasUI.BaseMeshEffect,IsActive,bool IsActive()
+CanvasUI.BaseMeshEffect,ModifyMesh,void ModifyMesh(VertexHelper) / void ModifyMesh(Mesh)
+CanvasUI.BaseVertexEffect,ModifyVertices,void ModifyVertices(List<UIVertex>)
+CanvasUI.Button,.ctor,Button()
+CanvasUI.Button,FindSelectableOnDown,Selectable FindSelectableOnDown()
+CanvasUI.Button,FindSelectableOnLeft,Selectable FindSelectableOnLeft()
+CanvasUI.Button,FindSelectableOnRight,Selectable FindSelectableOnRight()
+CanvasUI.Button,FindSelectableOnUp,Selectable FindSelectableOnUp()
+CanvasUI.Button,IsActive,bool IsActive()
+CanvasUI.Button,IsInteractable,bool IsInteractable()
+CanvasUI.Button,OnDeselect,void OnDeselect(BaseEventData)
+CanvasUI.Button,OnMove,void OnMove(AxisEventData)
+CanvasUI.Button,OnPointerClick,void OnPointerClick(PointerEventData)
+CanvasUI.Button,OnPointerDown,void OnPointerDown(PointerEventData)
+CanvasUI.Button,OnPointerEnter,void OnPointerEnter(PointerEventData)
+CanvasUI.Button,OnPointerExit,void OnPointerExit(PointerEventData)
+CanvasUI.Button,OnPointerUp,void OnPointerUp(PointerEventData)
+CanvasUI.Button,OnSelect,void OnSelect(BaseEventData)
+CanvasUI.Button,OnSubmit,void OnSubmit(BaseEventData)
+CanvasUI.Button,Select,void Select()
+CanvasUI.Button,onClick,Button.ButtonClickedEvent onClick { get; set; }
+CanvasUI.Button.ButtonClickedEvent,.ctor,ButtonClickedEvent()
+CanvasUI.CanvasScaler,.ctor,CanvasScaler()
+CanvasUI.CanvasScaler,IsActive,bool IsActive()
+CanvasUI.CanvasScaler,defaultSpriteDPI,float defaultSpriteDPI { get; set; }
+CanvasUI.CanvasScaler,dynamicPixelsPerUnit,float dynamicPixelsPerUnit { get; set; }
+CanvasUI.CanvasScaler,fallbackScreenDPI,float fallbackScreenDPI { get; set; }
+CanvasUI.CanvasScaler,matchWidthOrHeight,float matchWidthOrHeight { get; set; }
+CanvasUI.CanvasScaler,physicalUnit,CanvasScaler.Unit physicalUnit { get; set; }
+CanvasUI.CanvasScaler,referencePixelsPerUnit,float referencePixelsPerUnit { get; }
+CanvasUI.CanvasScaler,referenceResolution,Vector2 referenceResolution { get; set; }
+CanvasUI.CanvasScaler,scaleFactor,float scaleFactor { get; }
+CanvasUI.CanvasScaler,screenMatchMode,CanvasScaler.ScreenMatchMode screenMatchMode { get; set; }
+CanvasUI.CanvasScaler,uiScaleMode,CanvasScaler.ScaleMode uiScaleMode { get; set; }
+CanvasUI.CanvasScaler.ScaleMode,ConstantPhysicalSize,CanvasUI.CanvasScaler.ScaleMode.ConstantPhysicalSize = 2
+CanvasUI.CanvasScaler.ScaleMode,ConstantPixelSize,CanvasUI.CanvasScaler.ScaleMode.ConstantPixelSize = 0
+CanvasUI.CanvasScaler.ScaleMode,ScaleWithScreenSize,CanvasUI.CanvasScaler.ScaleMode.ScaleWithScreenSize = 1
+CanvasUI.CanvasScaler.ScreenMatchMode,Expand,CanvasUI.CanvasScaler.ScreenMatchMode.Expand = 1
+CanvasUI.CanvasScaler.ScreenMatchMode,MatchWidthOrHeight,CanvasUI.CanvasScaler.ScreenMatchMode.MatchWidthOrHeight = 0
+CanvasUI.CanvasScaler.ScreenMatchMode,Shrink,CanvasUI.CanvasScaler.ScreenMatchMode.Shrink = 2
+CanvasUI.CanvasScaler.Unit,Centimeters,CanvasUI.CanvasScaler.Unit.Centimeters = 0
+CanvasUI.CanvasScaler.Unit,Inches,CanvasUI.CanvasScaler.Unit.Inches = 2
+CanvasUI.CanvasScaler.Unit,Millimeters,CanvasUI.CanvasScaler.Unit.Millimeters = 1
+CanvasUI.CanvasScaler.Unit,Picas,CanvasUI.CanvasScaler.Unit.Picas = 4
+CanvasUI.CanvasScaler.Unit,Points,CanvasUI.CanvasScaler.Unit.Points = 3
+CanvasUI.CanvasText,.ctor,CanvasText()
+CanvasUI.CanvasText,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+CanvasUI.CanvasText,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+CanvasUI.CanvasText,ClearMesh,void ClearMesh() / void ClearMesh(bool)
+CanvasUI.CanvasText,ComputeMarginSize,void ComputeMarginSize()
+CanvasUI.CanvasText,CrossFadeAlpha,"void CrossFadeAlpha(float, float, bool)"
+CanvasUI.CanvasText,CrossFadeColor,"void CrossFadeColor(Color, float, bool, bool) / void CrossFadeColor(Color, float, bool, bool, bool)"
+CanvasUI.CanvasText,Cull,"void Cull(Rect, bool)"
+CanvasUI.CanvasText,ForceMeshUpdate,"void ForceMeshUpdate(bool = False, bool = False)"
+CanvasUI.CanvasText,GetModifiedMaterial,Material GetModifiedMaterial(Material)
+CanvasUI.CanvasText,GetParsedText,string GetParsedText()
+CanvasUI.CanvasText,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.CanvasText,IsActive,bool IsActive()
+CanvasUI.CanvasText,LayoutComplete,void LayoutComplete()
+CanvasUI.CanvasText,OnCullingChanged,void OnCullingChanged()
+CanvasUI.CanvasText,OnRebuildRequested,void OnRebuildRequested()
+CanvasUI.CanvasText,Raycast,"bool Raycast(Vector2, Camera)"
+CanvasUI.CanvasText,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.CanvasText,RecalculateClipping,void RecalculateClipping()
+CanvasUI.CanvasText,RecalculateMasking,void RecalculateMasking()
+CanvasUI.CanvasText,SetAllDirty,void SetAllDirty()
+CanvasUI.CanvasText,SetClipRect,"void SetClipRect(Rect, bool)"
+CanvasUI.CanvasText,SetClipSoftness,void SetClipSoftness(Vector2)
+CanvasUI.CanvasText,SetLayoutDirty,void SetLayoutDirty()
+CanvasUI.CanvasText,SetMaterialDirty,void SetMaterialDirty()
+CanvasUI.CanvasText,SetNativeSize,void SetNativeSize()
+CanvasUI.CanvasText,SetVertices,void SetVertices(Vector3[])
+CanvasUI.CanvasText,SetVerticesDirty,void SetVerticesDirty()
+CanvasUI.CanvasText,UpdateGeometry,"void UpdateGeometry(Mesh, int)"
+CanvasUI.CanvasText,UpdateMeshPadding,void UpdateMeshPadding()
+CanvasUI.CanvasText,defaultMaterial,Material defaultMaterial { get; }
+CanvasUI.CanvasText,flexibleHeight,float flexibleHeight { get; }
+CanvasUI.CanvasText,flexibleWidth,float flexibleWidth { get; }
+CanvasUI.CanvasText,layoutPriority,int layoutPriority { get; }
+CanvasUI.CanvasText,mainTexture,Texture mainTexture { get; }
+CanvasUI.CanvasText,maskOffset,Vector4 maskOffset { get; set; }
+CanvasUI.CanvasText,materialForRendering,Material materialForRendering { get; }
+CanvasUI.CanvasText,mesh,Mesh mesh { get; }
+CanvasUI.CanvasText,minHeight,float minHeight { get; }
+CanvasUI.CanvasText,minWidth,float minWidth { get; }
+CanvasUI.CanvasText,preferredHeight,float preferredHeight { get; }
+CanvasUI.CanvasText,preferredWidth,float preferredWidth { get; }
+CanvasUI.CanvasText,renderedHeight,float renderedHeight { get; }
+CanvasUI.CanvasText,renderedWidth,float renderedWidth { get; }
+CanvasUI.CanvasUpdate,LatePreRender,CanvasUI.CanvasUpdate.LatePreRender = 4
+CanvasUI.CanvasUpdate,Layout,CanvasUI.CanvasUpdate.Layout = 1
+CanvasUI.CanvasUpdate,MaxUpdateValue,CanvasUI.CanvasUpdate.MaxUpdateValue = 5
+CanvasUI.CanvasUpdate,PostLayout,CanvasUI.CanvasUpdate.PostLayout = 2
+CanvasUI.CanvasUpdate,PreRender,CanvasUI.CanvasUpdate.PreRender = 3
+CanvasUI.CanvasUpdate,Prelayout,CanvasUI.CanvasUpdate.Prelayout = 0
+CanvasUI.CanvasUpdateRegistry,DisableCanvasElementForRebuild,static void DisableCanvasElementForRebuild(ICanvasElement)
+CanvasUI.CanvasUpdateRegistry,IsRebuildingGraphics,static bool IsRebuildingGraphics()
+CanvasUI.CanvasUpdateRegistry,IsRebuildingLayout,static bool IsRebuildingLayout()
+CanvasUI.CanvasUpdateRegistry,RegisterCanvasElementForGraphicRebuild,static void RegisterCanvasElementForGraphicRebuild(ICanvasElement)
+CanvasUI.CanvasUpdateRegistry,RegisterCanvasElementForLayoutRebuild,static void RegisterCanvasElementForLayoutRebuild(ICanvasElement)
+CanvasUI.CanvasUpdateRegistry,TryRegisterCanvasElementForGraphicRebuild,static bool TryRegisterCanvasElementForGraphicRebuild(ICanvasElement)
+CanvasUI.CanvasUpdateRegistry,TryRegisterCanvasElementForLayoutRebuild,static bool TryRegisterCanvasElementForLayoutRebuild(ICanvasElement)
+CanvasUI.CanvasUpdateRegistry,UnRegisterCanvasElementForRebuild,static void UnRegisterCanvasElementForRebuild(ICanvasElement)
+CanvasUI.ClipperRegistry,Cull,static void Cull()
+CanvasUI.ClipperRegistry,Disable,static void Disable(IClipper)
+CanvasUI.ClipperRegistry,Register,static void Register(IClipper)
+CanvasUI.ClipperRegistry,Unregister,static void Unregister(IClipper)
+CanvasUI.Clipping,FindCullAndClipWorldRect,"static Rect FindCullAndClipWorldRect(List<RectMask2D>, out bool) / static Rect FindCullAndClipWorldRect(RectMask2D[], out bool)"
+CanvasUI.ColorBlock,colorMultiplier,float colorMultiplier { get; set; }
+CanvasUI.ColorBlock,defaultColorBlock,static ColorBlock defaultColorBlock { get; }
+CanvasUI.ColorBlock,disabledColor,Color disabledColor { get; set; }
+CanvasUI.ColorBlock,fadeDuration,float fadeDuration { get; set; }
+CanvasUI.ColorBlock,highlightedColor,Color highlightedColor { get; set; }
+CanvasUI.ColorBlock,normalColor,Color normalColor { get; set; }
+CanvasUI.ColorBlock,operators,"Equality(ColorBlock, ColorBlock) / Inequality(ColorBlock, ColorBlock)"
+CanvasUI.ColorBlock,pressedColor,Color pressedColor { get; set; }
+CanvasUI.ColorBlock,selectedColor,Color selectedColor { get; set; }
+CanvasUI.ContentSizeFitter,.ctor,ContentSizeFitter()
+CanvasUI.ContentSizeFitter,IsActive,bool IsActive()
+CanvasUI.ContentSizeFitter,SetLayoutHorizontal,void SetLayoutHorizontal()
+CanvasUI.ContentSizeFitter,SetLayoutVertical,void SetLayoutVertical()
+CanvasUI.ContentSizeFitter,horizontalFit,ContentSizeFitter.FitMode horizontalFit { get; set; }
+CanvasUI.ContentSizeFitter,verticalFit,ContentSizeFitter.FitMode verticalFit { get; set; }
+CanvasUI.ContentSizeFitter.FitMode,MinSize,CanvasUI.ContentSizeFitter.FitMode.MinSize = 1
+CanvasUI.ContentSizeFitter.FitMode,PreferredSize,CanvasUI.ContentSizeFitter.FitMode.PreferredSize = 2
+CanvasUI.ContentSizeFitter.FitMode,Unconstrained,CanvasUI.ContentSizeFitter.FitMode.Unconstrained = 0
+CanvasUI.DefaultControls,CreateButton,static GameObject CreateButton(DefaultControls.Resources)
+CanvasUI.DefaultControls,CreateDropdown,static GameObject CreateDropdown(DefaultControls.Resources)
+CanvasUI.DefaultControls,CreateImage,static GameObject CreateImage(DefaultControls.Resources)
+CanvasUI.DefaultControls,CreateInputField,static GameObject CreateInputField(DefaultControls.Resources)
+CanvasUI.DefaultControls,CreatePanel,static GameObject CreatePanel(DefaultControls.Resources)
+CanvasUI.DefaultControls,CreateRawImage,static GameObject CreateRawImage(DefaultControls.Resources)
+CanvasUI.DefaultControls,CreateScrollView,static GameObject CreateScrollView(DefaultControls.Resources)
+CanvasUI.DefaultControls,CreateScrollbar,static GameObject CreateScrollbar(DefaultControls.Resources)
+CanvasUI.DefaultControls,CreateSlider,static GameObject CreateSlider(DefaultControls.Resources)
+CanvasUI.DefaultControls,CreateText,static GameObject CreateText(DefaultControls.Resources)
+CanvasUI.DefaultControls,CreateToggle,static GameObject CreateToggle(DefaultControls.Resources)
+CanvasUI.DefaultControls,factory,static DefaultControls.IFactoryControls factory { get; set; }
+CanvasUI.DefaultControls.IFactoryControls,CreateGameObject,"GameObject CreateGameObject(string, params Type[])"
+CanvasUI.DefaultControls.Resources,background,Sprite background
+CanvasUI.DefaultControls.Resources,checkmark,Sprite checkmark
+CanvasUI.DefaultControls.Resources,dropdown,Sprite dropdown
+CanvasUI.DefaultControls.Resources,inputField,Sprite inputField
+CanvasUI.DefaultControls.Resources,knob,Sprite knob
+CanvasUI.DefaultControls.Resources,mask,Sprite mask
+CanvasUI.DefaultControls.Resources,standard,Sprite standard
+CanvasUI.Dropdown,.ctor,Dropdown()
+CanvasUI.Dropdown,AddOptions,void AddOptions(List<Dropdown.OptionData>) / void AddOptions(List<string>) / void AddOptions(List<Sprite>)
+CanvasUI.Dropdown,ClearOptions,void ClearOptions()
+CanvasUI.Dropdown,FindSelectableOnDown,Selectable FindSelectableOnDown()
+CanvasUI.Dropdown,FindSelectableOnLeft,Selectable FindSelectableOnLeft()
+CanvasUI.Dropdown,FindSelectableOnRight,Selectable FindSelectableOnRight()
+CanvasUI.Dropdown,FindSelectableOnUp,Selectable FindSelectableOnUp()
+CanvasUI.Dropdown,Hide,void Hide()
+CanvasUI.Dropdown,IsActive,bool IsActive()
+CanvasUI.Dropdown,IsExpanded,bool IsExpanded { get; }
+CanvasUI.Dropdown,IsInteractable,bool IsInteractable()
+CanvasUI.Dropdown,MultiSelect,bool MultiSelect { get; set; }
+CanvasUI.Dropdown,OnCancel,void OnCancel(BaseEventData)
+CanvasUI.Dropdown,OnDeselect,void OnDeselect(BaseEventData)
+CanvasUI.Dropdown,OnMove,void OnMove(AxisEventData)
+CanvasUI.Dropdown,OnPointerClick,void OnPointerClick(PointerEventData)
+CanvasUI.Dropdown,OnPointerDown,void OnPointerDown(PointerEventData)
+CanvasUI.Dropdown,OnPointerEnter,void OnPointerEnter(PointerEventData)
+CanvasUI.Dropdown,OnPointerExit,void OnPointerExit(PointerEventData)
+CanvasUI.Dropdown,OnPointerUp,void OnPointerUp(PointerEventData)
+CanvasUI.Dropdown,OnSelect,void OnSelect(BaseEventData)
+CanvasUI.Dropdown,OnSubmit,void OnSubmit(BaseEventData)
+CanvasUI.Dropdown,RefreshShownValue,void RefreshShownValue()
+CanvasUI.Dropdown,Select,void Select()
+CanvasUI.Dropdown,SetValueWithoutNotify,void SetValueWithoutNotify(int)
+CanvasUI.Dropdown,Show,void Show()
+CanvasUI.Dropdown,alphaFadeSpeed,float alphaFadeSpeed { get; set; }
+CanvasUI.Dropdown,captionImage,Image captionImage { get; set; }
+CanvasUI.Dropdown,captionText,TextBase captionText { get; set; }
+CanvasUI.Dropdown,itemImage,Image itemImage { get; set; }
+CanvasUI.Dropdown,itemText,TextBase itemText { get; set; }
+CanvasUI.Dropdown,onValueChanged,Dropdown.DropdownEvent onValueChanged { get; set; }
+CanvasUI.Dropdown,options,List<Dropdown.OptionData> options { get; set; }
+CanvasUI.Dropdown,placeholder,Graphic placeholder { get; set; }
+CanvasUI.Dropdown,template,RectTransform template { get; set; }
+CanvasUI.Dropdown,value,int value { get; set; }
+CanvasUI.Dropdown.DropdownEvent,.ctor,DropdownEvent()
+CanvasUI.Dropdown.OptionData,.ctor,"OptionData() / OptionData(string) / OptionData(Sprite) / OptionData(string, Sprite, Color)"
+CanvasUI.Dropdown.OptionData,color,Color color { get; set; }
+CanvasUI.Dropdown.OptionData,image,Sprite image { get; set; }
+CanvasUI.Dropdown.OptionData,text,string text { get; set; }
+CanvasUI.Dropdown.OptionDataList,.ctor,OptionDataList()
+CanvasUI.Dropdown.OptionDataList,options,List<Dropdown.OptionData> options { get; set; }
+CanvasUI.DropdownItem,.ctor,DropdownItem()
+CanvasUI.DropdownItem,IsActive,bool IsActive()
+CanvasUI.DropdownItem,OnCancel,void OnCancel(BaseEventData)
+CanvasUI.DropdownItem,OnPointerEnter,void OnPointerEnter(PointerEventData)
+CanvasUI.DropdownItem,image,Image image { get; set; }
+CanvasUI.DropdownItem,rectTransform,RectTransform rectTransform { get; set; }
+CanvasUI.DropdownItem,text,TextBase text { get; set; }
+CanvasUI.DropdownItem,toggle,Toggle toggle { get; set; }
+CanvasUI.Graphic,.ctor,Graphic()
+CanvasUI.Graphic,CrossFadeAlpha,"void CrossFadeAlpha(float, float, bool)"
+CanvasUI.Graphic,CrossFadeColor,"void CrossFadeColor(Color, float, bool, bool) / void CrossFadeColor(Color, float, bool, bool, bool)"
+CanvasUI.Graphic,GetPixelAdjustedRect,Rect GetPixelAdjustedRect()
+CanvasUI.Graphic,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.Graphic,IsActive,bool IsActive()
+CanvasUI.Graphic,LayoutComplete,void LayoutComplete()
+CanvasUI.Graphic,OnCullingChanged,void OnCullingChanged()
+CanvasUI.Graphic,OnRebuildRequested,void OnRebuildRequested()
+CanvasUI.Graphic,PixelAdjustPoint,Vector2 PixelAdjustPoint(Vector2)
+CanvasUI.Graphic,Raycast,"bool Raycast(Vector2, Camera)"
+CanvasUI.Graphic,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.Graphic,RegisterDirtyLayoutCallback,void RegisterDirtyLayoutCallback(HelixAction)
+CanvasUI.Graphic,RegisterDirtyMaterialCallback,void RegisterDirtyMaterialCallback(HelixAction)
+CanvasUI.Graphic,RegisterDirtyVerticesCallback,void RegisterDirtyVerticesCallback(HelixAction)
+CanvasUI.Graphic,SetAllDirty,void SetAllDirty()
+CanvasUI.Graphic,SetLayoutDirty,void SetLayoutDirty()
+CanvasUI.Graphic,SetMaterialDirty,void SetMaterialDirty()
+CanvasUI.Graphic,SetNativeSize,void SetNativeSize()
+CanvasUI.Graphic,SetRaycastDirty,void SetRaycastDirty()
+CanvasUI.Graphic,SetVerticesDirty,void SetVerticesDirty()
+CanvasUI.Graphic,UnregisterDirtyLayoutCallback,void UnregisterDirtyLayoutCallback(HelixAction)
+CanvasUI.Graphic,UnregisterDirtyMaterialCallback,void UnregisterDirtyMaterialCallback(HelixAction)
+CanvasUI.Graphic,UnregisterDirtyVerticesCallback,void UnregisterDirtyVerticesCallback(HelixAction)
+CanvasUI.Graphic,canvas,Canvas canvas { get; }
+CanvasUI.Graphic,canvasRenderer,CanvasRenderer canvasRenderer { get; }
+CanvasUI.Graphic,color,Color color { get; set; }
+CanvasUI.Graphic,defaultGraphicMaterial,static Material defaultGraphicMaterial { get; }
+CanvasUI.Graphic,defaultMaterial,Material defaultMaterial { get; }
+CanvasUI.Graphic,depth,int depth { get; }
+CanvasUI.Graphic,mainTexture,Texture mainTexture { get; }
+CanvasUI.Graphic,material,Material material { get; set; }
+CanvasUI.Graphic,materialForRendering,Material materialForRendering { get; }
+CanvasUI.Graphic,raycastPadding,Vector4 raycastPadding { get; set; }
+CanvasUI.Graphic,raycastTarget,bool raycastTarget { get; set; }
+CanvasUI.Graphic,rectTransform,RectTransform rectTransform { get; }
+CanvasUI.GraphicRaycaster,.ctor,GraphicRaycaster()
+CanvasUI.GraphicRaycaster,IsActive,bool IsActive()
+CanvasUI.GraphicRaycaster,Raycast,"void Raycast(PointerEventData, List<RaycastResult>)"
+CanvasUI.GraphicRaycaster,blockingMask,LayerMask blockingMask { get; set; }
+CanvasUI.GraphicRaycaster,blockingObjects,GraphicRaycaster.BlockingObjects blockingObjects { get; set; }
+CanvasUI.GraphicRaycaster,eventCamera,Camera eventCamera { get; }
+CanvasUI.GraphicRaycaster,ignoreReversedGraphics,bool ignoreReversedGraphics { get; set; }
+CanvasUI.GraphicRaycaster,priority,int priority { get; }
+CanvasUI.GraphicRaycaster,renderOrderPriority,int renderOrderPriority { get; }
+CanvasUI.GraphicRaycaster,sortOrderPriority,int sortOrderPriority { get; }
+CanvasUI.GraphicRaycaster.BlockingObjects,All,CanvasUI.GraphicRaycaster.BlockingObjects.All = 3
+CanvasUI.GraphicRaycaster.BlockingObjects,None,CanvasUI.GraphicRaycaster.BlockingObjects.None = 0
+CanvasUI.GraphicRaycaster.BlockingObjects,ThreeD,CanvasUI.GraphicRaycaster.BlockingObjects.ThreeD = 2
+CanvasUI.GraphicRaycaster.BlockingObjects,TwoD,CanvasUI.GraphicRaycaster.BlockingObjects.TwoD = 1
+CanvasUI.GraphicRebuildTracker,DisableTrackGraphic,static void DisableTrackGraphic(Graphic)
+CanvasUI.GraphicRebuildTracker,TrackGraphic,static void TrackGraphic(Graphic)
+CanvasUI.GraphicRebuildTracker,UnTrackGraphic,static void UnTrackGraphic(Graphic)
+CanvasUI.GraphicRegistry,DisableGraphicForCanvas,"static void DisableGraphicForCanvas(Canvas, Graphic)"
+CanvasUI.GraphicRegistry,DisableRaycastGraphicForCanvas,"static void DisableRaycastGraphicForCanvas(Canvas, Graphic)"
+CanvasUI.GraphicRegistry,GetGraphicsForCanvas,static IList<Graphic> GetGraphicsForCanvas(Canvas)
+CanvasUI.GraphicRegistry,GetRaycastableGraphicsForCanvas,static IList<Graphic> GetRaycastableGraphicsForCanvas(Canvas)
+CanvasUI.GraphicRegistry,RegisterGraphicForCanvas,"static void RegisterGraphicForCanvas(Canvas, Graphic)"
+CanvasUI.GraphicRegistry,RegisterRaycastGraphicForCanvas,"static void RegisterRaycastGraphicForCanvas(Canvas, Graphic)"
+CanvasUI.GraphicRegistry,UnregisterGraphicForCanvas,"static void UnregisterGraphicForCanvas(Canvas, Graphic)"
+CanvasUI.GraphicRegistry,UnregisterRaycastGraphicForCanvas,"static void UnregisterRaycastGraphicForCanvas(Canvas, Graphic)"
+CanvasUI.GridLayoutGroup,.ctor,GridLayoutGroup()
+CanvasUI.GridLayoutGroup,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+CanvasUI.GridLayoutGroup,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+CanvasUI.GridLayoutGroup,IsActive,bool IsActive()
+CanvasUI.GridLayoutGroup,SetLayoutHorizontal,void SetLayoutHorizontal()
+CanvasUI.GridLayoutGroup,SetLayoutVertical,void SetLayoutVertical()
+CanvasUI.GridLayoutGroup,cellSize,Vector2 cellSize { get; set; }
+CanvasUI.GridLayoutGroup,constraint,GridLayoutGroup.Constraint constraint { get; set; }
+CanvasUI.GridLayoutGroup,constraintCount,int constraintCount { get; set; }
+CanvasUI.GridLayoutGroup,flexibleHeight,float flexibleHeight { get; }
+CanvasUI.GridLayoutGroup,flexibleWidth,float flexibleWidth { get; }
+CanvasUI.GridLayoutGroup,layoutPriority,int layoutPriority { get; }
+CanvasUI.GridLayoutGroup,minHeight,float minHeight { get; }
+CanvasUI.GridLayoutGroup,minWidth,float minWidth { get; }
+CanvasUI.GridLayoutGroup,preferredHeight,float preferredHeight { get; }
+CanvasUI.GridLayoutGroup,preferredWidth,float preferredWidth { get; }
+CanvasUI.GridLayoutGroup,spacing,Vector2 spacing { get; set; }
+CanvasUI.GridLayoutGroup,startAxis,GridLayoutGroup.Axis startAxis { get; set; }
+CanvasUI.GridLayoutGroup,startCorner,GridLayoutGroup.Corner startCorner { get; set; }
+CanvasUI.GridLayoutGroup.Axis,Horizontal,CanvasUI.GridLayoutGroup.Axis.Horizontal = 0
+CanvasUI.GridLayoutGroup.Axis,Vertical,CanvasUI.GridLayoutGroup.Axis.Vertical = 1
+CanvasUI.GridLayoutGroup.Constraint,FixedColumnCount,CanvasUI.GridLayoutGroup.Constraint.FixedColumnCount = 1
+CanvasUI.GridLayoutGroup.Constraint,FixedRowCount,CanvasUI.GridLayoutGroup.Constraint.FixedRowCount = 2
+CanvasUI.GridLayoutGroup.Constraint,Flexible,CanvasUI.GridLayoutGroup.Constraint.Flexible = 0
+CanvasUI.GridLayoutGroup.Corner,LowerLeft,CanvasUI.GridLayoutGroup.Corner.LowerLeft = 2
+CanvasUI.GridLayoutGroup.Corner,LowerRight,CanvasUI.GridLayoutGroup.Corner.LowerRight = 3
+CanvasUI.GridLayoutGroup.Corner,UpperLeft,CanvasUI.GridLayoutGroup.Corner.UpperLeft = 0
+CanvasUI.GridLayoutGroup.Corner,UpperRight,CanvasUI.GridLayoutGroup.Corner.UpperRight = 1
+CanvasUI.HorizontalLayoutGroup,.ctor,HorizontalLayoutGroup()
+CanvasUI.HorizontalLayoutGroup,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+CanvasUI.HorizontalLayoutGroup,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+CanvasUI.HorizontalLayoutGroup,IsActive,bool IsActive()
+CanvasUI.HorizontalLayoutGroup,SetLayoutHorizontal,void SetLayoutHorizontal()
+CanvasUI.HorizontalLayoutGroup,SetLayoutVertical,void SetLayoutVertical()
+CanvasUI.HorizontalLayoutGroup,flexibleHeight,float flexibleHeight { get; }
+CanvasUI.HorizontalLayoutGroup,flexibleWidth,float flexibleWidth { get; }
+CanvasUI.HorizontalLayoutGroup,layoutPriority,int layoutPriority { get; }
+CanvasUI.HorizontalLayoutGroup,minHeight,float minHeight { get; }
+CanvasUI.HorizontalLayoutGroup,minWidth,float minWidth { get; }
+CanvasUI.HorizontalLayoutGroup,preferredHeight,float preferredHeight { get; }
+CanvasUI.HorizontalLayoutGroup,preferredWidth,float preferredWidth { get; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,.ctor,HorizontalOrVerticalLayoutGroup()
+CanvasUI.HorizontalOrVerticalLayoutGroup,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+CanvasUI.HorizontalOrVerticalLayoutGroup,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+CanvasUI.HorizontalOrVerticalLayoutGroup,IsActive,bool IsActive()
+CanvasUI.HorizontalOrVerticalLayoutGroup,SetLayoutHorizontal,void SetLayoutHorizontal()
+CanvasUI.HorizontalOrVerticalLayoutGroup,SetLayoutVertical,void SetLayoutVertical()
+CanvasUI.HorizontalOrVerticalLayoutGroup,childControlHeight,bool childControlHeight { get; set; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,childControlWidth,bool childControlWidth { get; set; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,childForceExpandHeight,bool childForceExpandHeight { get; set; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,childForceExpandWidth,bool childForceExpandWidth { get; set; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,childScaleHeight,bool childScaleHeight { get; set; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,childScaleWidth,bool childScaleWidth { get; set; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,flexibleHeight,float flexibleHeight { get; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,flexibleWidth,float flexibleWidth { get; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,layoutPriority,int layoutPriority { get; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,minHeight,float minHeight { get; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,minWidth,float minWidth { get; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,preferredHeight,float preferredHeight { get; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,preferredWidth,float preferredWidth { get; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,reverseArrangement,bool reverseArrangement { get; set; }
+CanvasUI.HorizontalOrVerticalLayoutGroup,spacing,float spacing { get; set; }
+CanvasUI.ICanvasElement,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.ICanvasElement,IsDestroyed,bool IsDestroyed()
+CanvasUI.ICanvasElement,LayoutComplete,void LayoutComplete()
+CanvasUI.ICanvasElement,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.ICanvasElement,transform,Transform transform { get; }
+CanvasUI.IClippable,Cull,"void Cull(Rect, bool)"
+CanvasUI.IClippable,RecalculateClipping,void RecalculateClipping()
+CanvasUI.IClippable,SetClipRect,"void SetClipRect(Rect, bool)"
+CanvasUI.IClippable,SetClipSoftness,void SetClipSoftness(Vector2)
+CanvasUI.IClippable,gameObject,GameObject gameObject { get; }
+CanvasUI.IClippable,rectTransform,RectTransform rectTransform { get; }
+CanvasUI.IClipper,PerformClipping,void PerformClipping()
+CanvasUI.ILayoutController,SetLayoutHorizontal,void SetLayoutHorizontal()
+CanvasUI.ILayoutController,SetLayoutVertical,void SetLayoutVertical()
+CanvasUI.ILayoutElement,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+CanvasUI.ILayoutElement,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+CanvasUI.ILayoutElement,flexibleHeight,float flexibleHeight { get; }
+CanvasUI.ILayoutElement,flexibleWidth,float flexibleWidth { get; }
+CanvasUI.ILayoutElement,layoutPriority,int layoutPriority { get; }
+CanvasUI.ILayoutElement,minHeight,float minHeight { get; }
+CanvasUI.ILayoutElement,minWidth,float minWidth { get; }
+CanvasUI.ILayoutElement,preferredHeight,float preferredHeight { get; }
+CanvasUI.ILayoutElement,preferredWidth,float preferredWidth { get; }
+CanvasUI.ILayoutIgnorer,ignoreLayout,bool ignoreLayout { get; }
+CanvasUI.IMaskable,RecalculateMasking,void RecalculateMasking()
+CanvasUI.IMaterialModifier,GetModifiedMaterial,Material GetModifiedMaterial(Material)
+CanvasUI.IMeshModifier,ModifyMesh,void ModifyMesh(VertexHelper)
+CanvasUI.Image,.ctor,Image()
+CanvasUI.Image,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+CanvasUI.Image,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+CanvasUI.Image,CrossFadeAlpha,"void CrossFadeAlpha(float, float, bool)"
+CanvasUI.Image,CrossFadeColor,"void CrossFadeColor(Color, float, bool, bool) / void CrossFadeColor(Color, float, bool, bool, bool)"
+CanvasUI.Image,Cull,"void Cull(Rect, bool)"
+CanvasUI.Image,DisableSpriteOptimizations,void DisableSpriteOptimizations()
+CanvasUI.Image,GetModifiedMaterial,Material GetModifiedMaterial(Material)
+CanvasUI.Image,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.Image,IsActive,bool IsActive()
+CanvasUI.Image,IsRaycastLocationValid,"bool IsRaycastLocationValid(Vector2, Camera)"
+CanvasUI.Image,LayoutComplete,void LayoutComplete()
+CanvasUI.Image,OnAfterDeserialize,void OnAfterDeserialize()
+CanvasUI.Image,OnBeforeSerialize,void OnBeforeSerialize()
+CanvasUI.Image,OnCullingChanged,void OnCullingChanged()
+CanvasUI.Image,OnRebuildRequested,void OnRebuildRequested()
+CanvasUI.Image,Raycast,"bool Raycast(Vector2, Camera)"
+CanvasUI.Image,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.Image,RecalculateClipping,void RecalculateClipping()
+CanvasUI.Image,RecalculateMasking,void RecalculateMasking()
+CanvasUI.Image,SetAllDirty,void SetAllDirty()
+CanvasUI.Image,SetClipRect,"void SetClipRect(Rect, bool)"
+CanvasUI.Image,SetClipSoftness,void SetClipSoftness(Vector2)
+CanvasUI.Image,SetLayoutDirty,void SetLayoutDirty()
+CanvasUI.Image,SetMaterialDirty,void SetMaterialDirty()
+CanvasUI.Image,SetNativeSize,void SetNativeSize()
+CanvasUI.Image,SetVerticesDirty,void SetVerticesDirty()
+CanvasUI.Image,alphaHitTestMinimumThreshold,float alphaHitTestMinimumThreshold { get; set; }
+CanvasUI.Image,defaultETC1GraphicMaterial,static Material defaultETC1GraphicMaterial { get; }
+CanvasUI.Image,defaultMaterial,Material defaultMaterial { get; }
+CanvasUI.Image,eventAlphaThreshold,float eventAlphaThreshold { get; set; }
+CanvasUI.Image,fillAmount,float fillAmount { get; set; }
+CanvasUI.Image,fillCenter,bool fillCenter { get; set; }
+CanvasUI.Image,fillClockwise,bool fillClockwise { get; set; }
+CanvasUI.Image,fillMethod,Image.FillMethod fillMethod { get; set; }
+CanvasUI.Image,fillOrigin,int fillOrigin { get; set; }
+CanvasUI.Image,flexibleHeight,float flexibleHeight { get; }
+CanvasUI.Image,flexibleWidth,float flexibleWidth { get; }
+CanvasUI.Image,hasBorder,bool hasBorder { get; }
+CanvasUI.Image,layoutPriority,int layoutPriority { get; }
+CanvasUI.Image,mainTexture,Texture mainTexture { get; }
+CanvasUI.Image,materialForRendering,Material materialForRendering { get; }
+CanvasUI.Image,minHeight,float minHeight { get; }
+CanvasUI.Image,minWidth,float minWidth { get; }
+CanvasUI.Image,overrideSprite,Sprite overrideSprite { get; set; }
+CanvasUI.Image,pixelsPerUnit,float pixelsPerUnit { get; }
+CanvasUI.Image,pixelsPerUnitMultiplier,float pixelsPerUnitMultiplier { get; set; }
+CanvasUI.Image,preferredHeight,float preferredHeight { get; }
+CanvasUI.Image,preferredWidth,float preferredWidth { get; }
+CanvasUI.Image,preserveAspect,bool preserveAspect { get; set; }
+CanvasUI.Image,sprite,Sprite sprite { get; set; }
+CanvasUI.Image,type,Image.Type type { get; set; }
+CanvasUI.Image,useSpriteMesh,bool useSpriteMesh { get; set; }
+CanvasUI.Image.FillMethod,Horizontal,CanvasUI.Image.FillMethod.Horizontal = 0
+CanvasUI.Image.FillMethod,Radial180,CanvasUI.Image.FillMethod.Radial180 = 3
+CanvasUI.Image.FillMethod,Radial360,CanvasUI.Image.FillMethod.Radial360 = 4
+CanvasUI.Image.FillMethod,Radial90,CanvasUI.Image.FillMethod.Radial90 = 2
+CanvasUI.Image.FillMethod,Vertical,CanvasUI.Image.FillMethod.Vertical = 1
+CanvasUI.Image.Origin180,Bottom,CanvasUI.Image.Origin180.Bottom = 0
+CanvasUI.Image.Origin180,Left,CanvasUI.Image.Origin180.Left = 1
+CanvasUI.Image.Origin180,Right,CanvasUI.Image.Origin180.Right = 3
+CanvasUI.Image.Origin180,Top,CanvasUI.Image.Origin180.Top = 2
+CanvasUI.Image.Origin360,Bottom,CanvasUI.Image.Origin360.Bottom = 0
+CanvasUI.Image.Origin360,Left,CanvasUI.Image.Origin360.Left = 3
+CanvasUI.Image.Origin360,Right,CanvasUI.Image.Origin360.Right = 1
+CanvasUI.Image.Origin360,Top,CanvasUI.Image.Origin360.Top = 2
+CanvasUI.Image.Origin90,BottomLeft,CanvasUI.Image.Origin90.BottomLeft = 0
+CanvasUI.Image.Origin90,BottomRight,CanvasUI.Image.Origin90.BottomRight = 3
+CanvasUI.Image.Origin90,TopLeft,CanvasUI.Image.Origin90.TopLeft = 1
+CanvasUI.Image.Origin90,TopRight,CanvasUI.Image.Origin90.TopRight = 2
+CanvasUI.Image.OriginHorizontal,Left,CanvasUI.Image.OriginHorizontal.Left = 0
+CanvasUI.Image.OriginHorizontal,Right,CanvasUI.Image.OriginHorizontal.Right = 1
+CanvasUI.Image.OriginVertical,Bottom,CanvasUI.Image.OriginVertical.Bottom = 0
+CanvasUI.Image.OriginVertical,Top,CanvasUI.Image.OriginVertical.Top = 1
+CanvasUI.Image.Type,Filled,CanvasUI.Image.Type.Filled = 3
+CanvasUI.Image.Type,Simple,CanvasUI.Image.Type.Simple = 0
+CanvasUI.Image.Type,Sliced,CanvasUI.Image.Type.Sliced = 1
+CanvasUI.Image.Type,Tiled,CanvasUI.Image.Type.Tiled = 2
+CanvasUI.LayoutElement,.ctor,LayoutElement()
+CanvasUI.LayoutElement,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+CanvasUI.LayoutElement,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+CanvasUI.LayoutElement,IsActive,bool IsActive()
+CanvasUI.LayoutElement,flexibleHeight,float flexibleHeight { get; set; }
+CanvasUI.LayoutElement,flexibleWidth,float flexibleWidth { get; set; }
+CanvasUI.LayoutElement,ignoreLayout,bool ignoreLayout { get; set; }
+CanvasUI.LayoutElement,layoutPriority,int layoutPriority { get; set; }
+CanvasUI.LayoutElement,minHeight,float minHeight { get; set; }
+CanvasUI.LayoutElement,minWidth,float minWidth { get; set; }
+CanvasUI.LayoutElement,preferredHeight,float preferredHeight { get; set; }
+CanvasUI.LayoutElement,preferredWidth,float preferredWidth { get; set; }
+CanvasUI.LayoutGroup,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+CanvasUI.LayoutGroup,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+CanvasUI.LayoutGroup,IsActive,bool IsActive()
+CanvasUI.LayoutGroup,SetLayoutHorizontal,void SetLayoutHorizontal()
+CanvasUI.LayoutGroup,SetLayoutVertical,void SetLayoutVertical()
+CanvasUI.LayoutGroup,childAlignment,TextAnchor childAlignment { get; set; }
+CanvasUI.LayoutGroup,flexibleHeight,float flexibleHeight { get; }
+CanvasUI.LayoutGroup,flexibleWidth,float flexibleWidth { get; }
+CanvasUI.LayoutGroup,layoutPriority,int layoutPriority { get; }
+CanvasUI.LayoutGroup,minHeight,float minHeight { get; }
+CanvasUI.LayoutGroup,minWidth,float minWidth { get; }
+CanvasUI.LayoutGroup,padding,RectOffset padding { get; set; }
+CanvasUI.LayoutGroup,preferredHeight,float preferredHeight { get; }
+CanvasUI.LayoutGroup,preferredWidth,float preferredWidth { get; }
+CanvasUI.LayoutProperty,FlexibleHeight,CanvasUI.LayoutProperty.FlexibleHeight = 5
+CanvasUI.LayoutProperty,FlexibleWidth,CanvasUI.LayoutProperty.FlexibleWidth = 2
+CanvasUI.LayoutProperty,MinHeight,CanvasUI.LayoutProperty.MinHeight = 3
+CanvasUI.LayoutProperty,MinWidth,CanvasUI.LayoutProperty.MinWidth = 0
+CanvasUI.LayoutProperty,PreferredHeight,CanvasUI.LayoutProperty.PreferredHeight = 4
+CanvasUI.LayoutProperty,PreferredWidth,CanvasUI.LayoutProperty.PreferredWidth = 1
+CanvasUI.LayoutRebuilder,ForceRebuildLayoutImmediate,static void ForceRebuildLayoutImmediate(RectTransform)
+CanvasUI.LayoutRebuilder,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.LayoutRebuilder,IsDestroyed,bool IsDestroyed()
+CanvasUI.LayoutRebuilder,LayoutComplete,void LayoutComplete()
+CanvasUI.LayoutRebuilder,MarkLayoutForRebuild,static void MarkLayoutForRebuild(RectTransform)
+CanvasUI.LayoutRebuilder,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.LayoutRebuilder,ToString,string ToString()
+CanvasUI.LayoutRebuilder,operators,"Equality(LayoutRebuilder, LayoutRebuilder) / Inequality(LayoutRebuilder, LayoutRebuilder) / Implicit(LayoutRebuilder)"
+CanvasUI.LayoutRebuilder,transform,Transform transform { get; }
+CanvasUI.LayoutUtility,GetFlexibleHeight,static float GetFlexibleHeight(RectTransform)
+CanvasUI.LayoutUtility,GetFlexibleSize,"static float GetFlexibleSize(RectTransform, int)"
+CanvasUI.LayoutUtility,GetFlexibleWidth,static float GetFlexibleWidth(RectTransform)
+CanvasUI.LayoutUtility,GetLayoutProperty,"static float GetLayoutProperty(RectTransform, Func<ILayoutElement, float>, float) / static float GetLayoutProperty(RectTransform, Func<ILayoutElement, float>, float, out ILayoutElement)"
+CanvasUI.LayoutUtility,GetMinHeight,static float GetMinHeight(RectTransform)
+CanvasUI.LayoutUtility,GetMinSize,"static float GetMinSize(RectTransform, int)"
+CanvasUI.LayoutUtility,GetMinWidth,static float GetMinWidth(RectTransform)
+CanvasUI.LayoutUtility,GetPreferredHeight,static float GetPreferredHeight(RectTransform)
+CanvasUI.LayoutUtility,GetPreferredSize,"static float GetPreferredSize(RectTransform, int)"
+CanvasUI.LayoutUtility,GetPreferredWidth,static float GetPreferredWidth(RectTransform)
+CanvasUI.Mask,.ctor,Mask()
+CanvasUI.Mask,GetModifiedMaterial,Material GetModifiedMaterial(Material)
+CanvasUI.Mask,IsActive,bool IsActive()
+CanvasUI.Mask,IsRaycastLocationValid,"bool IsRaycastLocationValid(Vector2, Camera)"
+CanvasUI.Mask,MaskEnabled,bool MaskEnabled()
+CanvasUI.Mask,OnSiblingGraphicEnabledDisabled,void OnSiblingGraphicEnabledDisabled()
+CanvasUI.Mask,graphic,Graphic graphic { get; }
+CanvasUI.Mask,rectTransform,RectTransform rectTransform { get; }
+CanvasUI.Mask,showMaskGraphic,bool showMaskGraphic { get; set; }
+CanvasUI.MaskUtilities,FindRootSortOverrideCanvas,static Transform FindRootSortOverrideCanvas(Transform)
+CanvasUI.MaskUtilities,GetRectMaskForClippable,static RectMask2D GetRectMaskForClippable(IClippable)
+CanvasUI.MaskUtilities,GetRectMasksForClip,"static void GetRectMasksForClip(RectMask2D, List<RectMask2D>)"
+CanvasUI.MaskUtilities,GetStencilDepth,"static int GetStencilDepth(Transform, Transform)"
+CanvasUI.MaskUtilities,IsDescendantOrSelf,"static bool IsDescendantOrSelf(Transform, Transform)"
+CanvasUI.MaskUtilities,Notify2DMaskStateChanged,static void Notify2DMaskStateChanged(Component)
+CanvasUI.MaskUtilities,NotifyStencilStateChanged,static void NotifyStencilStateChanged(Component)
+CanvasUI.MaskableGraphic,.ctor,MaskableGraphic()
+CanvasUI.MaskableGraphic,CrossFadeAlpha,"void CrossFadeAlpha(float, float, bool)"
+CanvasUI.MaskableGraphic,CrossFadeColor,"void CrossFadeColor(Color, float, bool, bool) / void CrossFadeColor(Color, float, bool, bool, bool)"
+CanvasUI.MaskableGraphic,Cull,"void Cull(Rect, bool)"
+CanvasUI.MaskableGraphic,GetModifiedMaterial,Material GetModifiedMaterial(Material)
+CanvasUI.MaskableGraphic,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.MaskableGraphic,IsActive,bool IsActive()
+CanvasUI.MaskableGraphic,LayoutComplete,void LayoutComplete()
+CanvasUI.MaskableGraphic,OnCullingChanged,void OnCullingChanged()
+CanvasUI.MaskableGraphic,OnRebuildRequested,void OnRebuildRequested()
+CanvasUI.MaskableGraphic,Raycast,"bool Raycast(Vector2, Camera)"
+CanvasUI.MaskableGraphic,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.MaskableGraphic,RecalculateClipping,void RecalculateClipping()
+CanvasUI.MaskableGraphic,RecalculateMasking,void RecalculateMasking()
+CanvasUI.MaskableGraphic,SetAllDirty,void SetAllDirty()
+CanvasUI.MaskableGraphic,SetClipRect,"void SetClipRect(Rect, bool)"
+CanvasUI.MaskableGraphic,SetClipSoftness,void SetClipSoftness(Vector2)
+CanvasUI.MaskableGraphic,SetLayoutDirty,void SetLayoutDirty()
+CanvasUI.MaskableGraphic,SetMaterialDirty,void SetMaterialDirty()
+CanvasUI.MaskableGraphic,SetNativeSize,void SetNativeSize()
+CanvasUI.MaskableGraphic,SetVerticesDirty,void SetVerticesDirty()
+CanvasUI.MaskableGraphic,defaultMaterial,Material defaultMaterial { get; }
+CanvasUI.MaskableGraphic,isMaskingGraphic,bool isMaskingGraphic { get; set; }
+CanvasUI.MaskableGraphic,mainTexture,Texture mainTexture { get; }
+CanvasUI.MaskableGraphic,maskable,bool maskable { get; set; }
+CanvasUI.MaskableGraphic,materialForRendering,Material materialForRendering { get; }
+CanvasUI.MaskableGraphic,onCullStateChanged,MaskableGraphic.CullStateChangedEvent onCullStateChanged { get; set; }
+CanvasUI.MaskableGraphic.CullStateChangedEvent,.ctor,CullStateChangedEvent()
+CanvasUI.Navigation,defaultNavigation,static Navigation defaultNavigation { get; }
+CanvasUI.Navigation,mode,Navigation.Mode mode { get; set; }
+CanvasUI.Navigation,selectOnDown,Selectable selectOnDown { get; set; }
+CanvasUI.Navigation,selectOnLeft,Selectable selectOnLeft { get; set; }
+CanvasUI.Navigation,selectOnRight,Selectable selectOnRight { get; set; }
+CanvasUI.Navigation,selectOnUp,Selectable selectOnUp { get; set; }
+CanvasUI.Navigation,wrapAround,bool wrapAround { get; set; }
+CanvasUI.Navigation.Mode,Automatic,CanvasUI.Navigation.Mode.Automatic = 3
+CanvasUI.Navigation.Mode,Explicit,CanvasUI.Navigation.Mode.Explicit = 4
+CanvasUI.Navigation.Mode,Horizontal,CanvasUI.Navigation.Mode.Horizontal = 1
+CanvasUI.Navigation.Mode,None,CanvasUI.Navigation.Mode.None = 0
+CanvasUI.Navigation.Mode,Vertical,CanvasUI.Navigation.Mode.Vertical = 2
+CanvasUI.NavigationMode,Automatic,CanvasUI.NavigationMode.Automatic = 3
+CanvasUI.NavigationMode,Explicit,CanvasUI.NavigationMode.Explicit = 4
+CanvasUI.NavigationMode,Horizontal,CanvasUI.NavigationMode.Horizontal = 1
+CanvasUI.NavigationMode,None,CanvasUI.NavigationMode.None = 0
+CanvasUI.NavigationMode,Vertical,CanvasUI.NavigationMode.Vertical = 2
+CanvasUI.Outline,.ctor,Outline()
+CanvasUI.Outline,IsActive,bool IsActive()
+CanvasUI.Outline,ModifyMesh,void ModifyMesh(VertexHelper) / void ModifyMesh(Mesh)
+CanvasUI.PositionAsUV1,.ctor,PositionAsUV1()
+CanvasUI.PositionAsUV1,IsActive,bool IsActive()
+CanvasUI.PositionAsUV1,ModifyMesh,void ModifyMesh(VertexHelper) / void ModifyMesh(Mesh)
+CanvasUI.RawImage,.ctor,RawImage()
+CanvasUI.RawImage,CrossFadeAlpha,"void CrossFadeAlpha(float, float, bool)"
+CanvasUI.RawImage,CrossFadeColor,"void CrossFadeColor(Color, float, bool, bool) / void CrossFadeColor(Color, float, bool, bool, bool)"
+CanvasUI.RawImage,Cull,"void Cull(Rect, bool)"
+CanvasUI.RawImage,GetModifiedMaterial,Material GetModifiedMaterial(Material)
+CanvasUI.RawImage,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.RawImage,IsActive,bool IsActive()
+CanvasUI.RawImage,LayoutComplete,void LayoutComplete()
+CanvasUI.RawImage,OnCullingChanged,void OnCullingChanged()
+CanvasUI.RawImage,OnRebuildRequested,void OnRebuildRequested()
+CanvasUI.RawImage,Raycast,"bool Raycast(Vector2, Camera)"
+CanvasUI.RawImage,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.RawImage,RecalculateClipping,void RecalculateClipping()
+CanvasUI.RawImage,RecalculateMasking,void RecalculateMasking()
+CanvasUI.RawImage,SetAllDirty,void SetAllDirty()
+CanvasUI.RawImage,SetClipRect,"void SetClipRect(Rect, bool)"
+CanvasUI.RawImage,SetClipSoftness,void SetClipSoftness(Vector2)
+CanvasUI.RawImage,SetLayoutDirty,void SetLayoutDirty()
+CanvasUI.RawImage,SetMaterialDirty,void SetMaterialDirty()
+CanvasUI.RawImage,SetNativeSize,void SetNativeSize()
+CanvasUI.RawImage,SetVerticesDirty,void SetVerticesDirty()
+CanvasUI.RawImage,defaultMaterial,Material defaultMaterial { get; }
+CanvasUI.RawImage,mainTexture,Texture mainTexture { get; }
+CanvasUI.RawImage,materialForRendering,Material materialForRendering { get; }
+CanvasUI.RawImage,texture,Texture texture { get; set; }
+CanvasUI.RawImage,uvRect,Rect uvRect { get; set; }
+CanvasUI.RectMask2D,.ctor,RectMask2D()
+CanvasUI.RectMask2D,AddClippable,void AddClippable(IClippable)
+CanvasUI.RectMask2D,IsActive,bool IsActive()
+CanvasUI.RectMask2D,IsRaycastLocationValid,"bool IsRaycastLocationValid(Vector2, Camera)"
+CanvasUI.RectMask2D,PerformClipping,void PerformClipping()
+CanvasUI.RectMask2D,RemoveClippable,void RemoveClippable(IClippable)
+CanvasUI.RectMask2D,UpdateClipSoftness,void UpdateClipSoftness()
+CanvasUI.RectMask2D,canvasRect,Rect canvasRect { get; }
+CanvasUI.RectMask2D,padding,Vector4 padding { get; set; }
+CanvasUI.RectMask2D,rectTransform,RectTransform rectTransform { get; }
+CanvasUI.RectMask2D,softness,Vector2Int softness { get; set; }
+CanvasUI.ScrollRect,.ctor,ScrollRect()
+CanvasUI.ScrollRect,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+CanvasUI.ScrollRect,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+CanvasUI.ScrollRect,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.ScrollRect,IsActive,bool IsActive()
+CanvasUI.ScrollRect,LayoutComplete,void LayoutComplete()
+CanvasUI.ScrollRect,OnBeginDrag,void OnBeginDrag(PointerEventData)
+CanvasUI.ScrollRect,OnDrag,void OnDrag(PointerEventData)
+CanvasUI.ScrollRect,OnEndDrag,void OnEndDrag(PointerEventData)
+CanvasUI.ScrollRect,OnInitializePotentialDrag,void OnInitializePotentialDrag(PointerEventData)
+CanvasUI.ScrollRect,OnScroll,void OnScroll(PointerEventData)
+CanvasUI.ScrollRect,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.ScrollRect,SetLayoutHorizontal,void SetLayoutHorizontal()
+CanvasUI.ScrollRect,SetLayoutVertical,void SetLayoutVertical()
+CanvasUI.ScrollRect,StopMovement,void StopMovement()
+CanvasUI.ScrollRect,content,RectTransform content { get; set; }
+CanvasUI.ScrollRect,decelerationRate,float decelerationRate { get; set; }
+CanvasUI.ScrollRect,elasticity,float elasticity { get; set; }
+CanvasUI.ScrollRect,flexibleHeight,float flexibleHeight { get; }
+CanvasUI.ScrollRect,flexibleWidth,float flexibleWidth { get; }
+CanvasUI.ScrollRect,horizontal,bool horizontal { get; set; }
+CanvasUI.ScrollRect,horizontalNormalizedPosition,float horizontalNormalizedPosition { get; set; }
+CanvasUI.ScrollRect,horizontalScrollbar,Scrollbar horizontalScrollbar { get; set; }
+CanvasUI.ScrollRect,horizontalScrollbarSpacing,float horizontalScrollbarSpacing { get; set; }
+CanvasUI.ScrollRect,horizontalScrollbarVisibility,ScrollRect.ScrollbarVisibility horizontalScrollbarVisibility { get; set; }
+CanvasUI.ScrollRect,inertia,bool inertia { get; set; }
+CanvasUI.ScrollRect,layoutPriority,int layoutPriority { get; }
+CanvasUI.ScrollRect,minHeight,float minHeight { get; }
+CanvasUI.ScrollRect,minWidth,float minWidth { get; }
+CanvasUI.ScrollRect,movementType,ScrollRect.MovementType movementType { get; set; }
+CanvasUI.ScrollRect,normalizedPosition,Vector2 normalizedPosition { get; set; }
+CanvasUI.ScrollRect,onValueChanged,ScrollRect.ScrollRectEvent onValueChanged { get; set; }
+CanvasUI.ScrollRect,preferredHeight,float preferredHeight { get; }
+CanvasUI.ScrollRect,preferredWidth,float preferredWidth { get; }
+CanvasUI.ScrollRect,scrollSensitivity,float scrollSensitivity { get; set; }
+CanvasUI.ScrollRect,velocity,Vector2 velocity { get; set; }
+CanvasUI.ScrollRect,vertical,bool vertical { get; set; }
+CanvasUI.ScrollRect,verticalNormalizedPosition,float verticalNormalizedPosition { get; set; }
+CanvasUI.ScrollRect,verticalScrollbar,Scrollbar verticalScrollbar { get; set; }
+CanvasUI.ScrollRect,verticalScrollbarSpacing,float verticalScrollbarSpacing { get; set; }
+CanvasUI.ScrollRect,verticalScrollbarVisibility,ScrollRect.ScrollbarVisibility verticalScrollbarVisibility { get; set; }
+CanvasUI.ScrollRect,viewport,RectTransform viewport { get; set; }
+CanvasUI.ScrollRect.MovementType,Clamped,CanvasUI.ScrollRect.MovementType.Clamped = 2
+CanvasUI.ScrollRect.MovementType,Elastic,CanvasUI.ScrollRect.MovementType.Elastic = 1
+CanvasUI.ScrollRect.MovementType,Unrestricted,CanvasUI.ScrollRect.MovementType.Unrestricted = 0
+CanvasUI.ScrollRect.ScrollRectEvent,.ctor,ScrollRectEvent()
+CanvasUI.ScrollRect.ScrollbarVisibility,AutoHide,CanvasUI.ScrollRect.ScrollbarVisibility.AutoHide = 1
+CanvasUI.ScrollRect.ScrollbarVisibility,AutoHideAndExpandViewport,CanvasUI.ScrollRect.ScrollbarVisibility.AutoHideAndExpandViewport = 2
+CanvasUI.ScrollRect.ScrollbarVisibility,Permanent,CanvasUI.ScrollRect.ScrollbarVisibility.Permanent = 0
+CanvasUI.Scrollbar,.ctor,Scrollbar()
+CanvasUI.Scrollbar,FindSelectableOnDown,Selectable FindSelectableOnDown()
+CanvasUI.Scrollbar,FindSelectableOnLeft,Selectable FindSelectableOnLeft()
+CanvasUI.Scrollbar,FindSelectableOnRight,Selectable FindSelectableOnRight()
+CanvasUI.Scrollbar,FindSelectableOnUp,Selectable FindSelectableOnUp()
+CanvasUI.Scrollbar,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.Scrollbar,IsActive,bool IsActive()
+CanvasUI.Scrollbar,IsInteractable,bool IsInteractable()
+CanvasUI.Scrollbar,LayoutComplete,void LayoutComplete()
+CanvasUI.Scrollbar,OnBeginDrag,void OnBeginDrag(PointerEventData)
+CanvasUI.Scrollbar,OnDeselect,void OnDeselect(BaseEventData)
+CanvasUI.Scrollbar,OnDrag,void OnDrag(PointerEventData)
+CanvasUI.Scrollbar,OnInitializePotentialDrag,void OnInitializePotentialDrag(PointerEventData)
+CanvasUI.Scrollbar,OnMove,void OnMove(AxisEventData)
+CanvasUI.Scrollbar,OnPointerDown,void OnPointerDown(PointerEventData)
+CanvasUI.Scrollbar,OnPointerEnter,void OnPointerEnter(PointerEventData)
+CanvasUI.Scrollbar,OnPointerExit,void OnPointerExit(PointerEventData)
+CanvasUI.Scrollbar,OnPointerUp,void OnPointerUp(PointerEventData)
+CanvasUI.Scrollbar,OnSelect,void OnSelect(BaseEventData)
+CanvasUI.Scrollbar,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.Scrollbar,Select,void Select()
+CanvasUI.Scrollbar,SetDirection,"void SetDirection(Scrollbar.Direction, bool)"
+CanvasUI.Scrollbar,SetValueWithoutNotify,void SetValueWithoutNotify(float)
+CanvasUI.Scrollbar,direction,Scrollbar.Direction direction { get; set; }
+CanvasUI.Scrollbar,handleRect,RectTransform handleRect { get; set; }
+CanvasUI.Scrollbar,numberOfSteps,int numberOfSteps { get; set; }
+CanvasUI.Scrollbar,onValueChanged,Scrollbar.ScrollEvent onValueChanged { get; set; }
+CanvasUI.Scrollbar,size,float size { get; set; }
+CanvasUI.Scrollbar,value,float value { get; set; }
+CanvasUI.Scrollbar.Direction,BottomToTop,CanvasUI.Scrollbar.Direction.BottomToTop = 2
+CanvasUI.Scrollbar.Direction,LeftToRight,CanvasUI.Scrollbar.Direction.LeftToRight = 0
+CanvasUI.Scrollbar.Direction,RightToLeft,CanvasUI.Scrollbar.Direction.RightToLeft = 1
+CanvasUI.Scrollbar.Direction,TopToBottom,CanvasUI.Scrollbar.Direction.TopToBottom = 3
+CanvasUI.Scrollbar.ScrollEvent,.ctor,ScrollEvent()
+CanvasUI.ScrollbarEventHandler,.ctor,ScrollbarEventHandler()
+CanvasUI.ScrollbarEventHandler,IsActive,bool IsActive()
+CanvasUI.ScrollbarEventHandler,OnDeselect,void OnDeselect(BaseEventData)
+CanvasUI.ScrollbarEventHandler,OnPointerClick,void OnPointerClick(PointerEventData)
+CanvasUI.ScrollbarEventHandler,OnSelect,void OnSelect(BaseEventData)
+CanvasUI.ScrollbarEventHandler,isSelected,bool isSelected { get; set; }
+CanvasUI.Selectable,.ctor,Selectable()
+CanvasUI.Selectable,AllSelectablesNoAlloc,static int AllSelectablesNoAlloc(Selectable[])
+CanvasUI.Selectable,FindSelectable,Selectable FindSelectable(Vector3)
+CanvasUI.Selectable,FindSelectableOnDown,Selectable FindSelectableOnDown()
+CanvasUI.Selectable,FindSelectableOnLeft,Selectable FindSelectableOnLeft()
+CanvasUI.Selectable,FindSelectableOnRight,Selectable FindSelectableOnRight()
+CanvasUI.Selectable,FindSelectableOnUp,Selectable FindSelectableOnUp()
+CanvasUI.Selectable,IsActive,bool IsActive()
+CanvasUI.Selectable,IsInteractable,bool IsInteractable()
+CanvasUI.Selectable,OnDeselect,void OnDeselect(BaseEventData)
+CanvasUI.Selectable,OnMove,void OnMove(AxisEventData)
+CanvasUI.Selectable,OnPointerDown,void OnPointerDown(PointerEventData)
+CanvasUI.Selectable,OnPointerEnter,void OnPointerEnter(PointerEventData)
+CanvasUI.Selectable,OnPointerExit,void OnPointerExit(PointerEventData)
+CanvasUI.Selectable,OnPointerUp,void OnPointerUp(PointerEventData)
+CanvasUI.Selectable,OnSelect,void OnSelect(BaseEventData)
+CanvasUI.Selectable,Select,void Select()
+CanvasUI.Selectable,allSelectableCount,static int allSelectableCount { get; }
+CanvasUI.Selectable,allSelectables,static List<Selectable> allSelectables { get; }
+CanvasUI.Selectable,allSelectablesArray,static Selectable[] allSelectablesArray { get; }
+CanvasUI.Selectable,animationTriggers,AnimationTriggers animationTriggers { get; set; }
+CanvasUI.Selectable,colors,ColorBlock colors { get; set; }
+CanvasUI.Selectable,image,Image image { get; set; }
+CanvasUI.Selectable,interactable,bool interactable { get; set; }
+CanvasUI.Selectable,navigation,Navigation navigation { get; set; }
+CanvasUI.Selectable,spriteState,SpriteState spriteState { get; set; }
+CanvasUI.Selectable,targetGraphic,Graphic targetGraphic { get; set; }
+CanvasUI.Selectable,transition,Selectable.Transition transition { get; set; }
+CanvasUI.Selectable.SelectionState,Disabled,CanvasUI.Selectable.SelectionState.Disabled = 4
+CanvasUI.Selectable.SelectionState,Highlighted,CanvasUI.Selectable.SelectionState.Highlighted = 1
+CanvasUI.Selectable.SelectionState,Normal,CanvasUI.Selectable.SelectionState.Normal = 0
+CanvasUI.Selectable.SelectionState,Pressed,CanvasUI.Selectable.SelectionState.Pressed = 2
+CanvasUI.Selectable.SelectionState,Selected,CanvasUI.Selectable.SelectionState.Selected = 3
+CanvasUI.Selectable.Transition,Animation,CanvasUI.Selectable.Transition.Animation = 3
+CanvasUI.Selectable.Transition,ColorTint,CanvasUI.Selectable.Transition.ColorTint = 1
+CanvasUI.Selectable.Transition,None,CanvasUI.Selectable.Transition.None = 0
+CanvasUI.Selectable.Transition,SpriteSwap,CanvasUI.Selectable.Transition.SpriteSwap = 2
+CanvasUI.SelectionCaret,.ctor,SelectionCaret()
+CanvasUI.SelectionCaret,CrossFadeAlpha,"void CrossFadeAlpha(float, float, bool)"
+CanvasUI.SelectionCaret,CrossFadeColor,"void CrossFadeColor(Color, float, bool, bool) / void CrossFadeColor(Color, float, bool, bool, bool)"
+CanvasUI.SelectionCaret,Cull,"void Cull(Rect, bool)"
+CanvasUI.SelectionCaret,GetModifiedMaterial,Material GetModifiedMaterial(Material)
+CanvasUI.SelectionCaret,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.SelectionCaret,IsActive,bool IsActive()
+CanvasUI.SelectionCaret,LayoutComplete,void LayoutComplete()
+CanvasUI.SelectionCaret,OnCullingChanged,void OnCullingChanged()
+CanvasUI.SelectionCaret,OnRebuildRequested,void OnRebuildRequested()
+CanvasUI.SelectionCaret,Raycast,"bool Raycast(Vector2, Camera)"
+CanvasUI.SelectionCaret,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.SelectionCaret,RecalculateClipping,void RecalculateClipping()
+CanvasUI.SelectionCaret,RecalculateMasking,void RecalculateMasking()
+CanvasUI.SelectionCaret,SetAllDirty,void SetAllDirty()
+CanvasUI.SelectionCaret,SetClipRect,"void SetClipRect(Rect, bool)"
+CanvasUI.SelectionCaret,SetClipSoftness,void SetClipSoftness(Vector2)
+CanvasUI.SelectionCaret,SetLayoutDirty,void SetLayoutDirty()
+CanvasUI.SelectionCaret,SetMaterialDirty,void SetMaterialDirty()
+CanvasUI.SelectionCaret,SetNativeSize,void SetNativeSize()
+CanvasUI.SelectionCaret,SetVerticesDirty,void SetVerticesDirty()
+CanvasUI.SelectionCaret,defaultMaterial,Material defaultMaterial { get; }
+CanvasUI.SelectionCaret,mainTexture,Texture mainTexture { get; }
+CanvasUI.SelectionCaret,materialForRendering,Material materialForRendering { get; }
+CanvasUI.Shadow,.ctor,Shadow()
+CanvasUI.Shadow,IsActive,bool IsActive()
+CanvasUI.Shadow,ModifyMesh,void ModifyMesh(VertexHelper) / void ModifyMesh(Mesh)
+CanvasUI.Shadow,effectColor,Color effectColor { get; set; }
+CanvasUI.Shadow,effectDistance,Vector2 effectDistance { get; set; }
+CanvasUI.Shadow,useGraphicAlpha,bool useGraphicAlpha { get; set; }
+CanvasUI.Slider,.ctor,Slider()
+CanvasUI.Slider,FindSelectableOnDown,Selectable FindSelectableOnDown()
+CanvasUI.Slider,FindSelectableOnLeft,Selectable FindSelectableOnLeft()
+CanvasUI.Slider,FindSelectableOnRight,Selectable FindSelectableOnRight()
+CanvasUI.Slider,FindSelectableOnUp,Selectable FindSelectableOnUp()
+CanvasUI.Slider,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.Slider,IsActive,bool IsActive()
+CanvasUI.Slider,IsInteractable,bool IsInteractable()
+CanvasUI.Slider,LayoutComplete,void LayoutComplete()
+CanvasUI.Slider,OnDeselect,void OnDeselect(BaseEventData)
+CanvasUI.Slider,OnDrag,void OnDrag(PointerEventData)
+CanvasUI.Slider,OnInitializePotentialDrag,void OnInitializePotentialDrag(PointerEventData)
+CanvasUI.Slider,OnMove,void OnMove(AxisEventData)
+CanvasUI.Slider,OnPointerDown,void OnPointerDown(PointerEventData)
+CanvasUI.Slider,OnPointerEnter,void OnPointerEnter(PointerEventData)
+CanvasUI.Slider,OnPointerExit,void OnPointerExit(PointerEventData)
+CanvasUI.Slider,OnPointerUp,void OnPointerUp(PointerEventData)
+CanvasUI.Slider,OnSelect,void OnSelect(BaseEventData)
+CanvasUI.Slider,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.Slider,Select,void Select()
+CanvasUI.Slider,SetDirection,"void SetDirection(Slider.Direction, bool)"
+CanvasUI.Slider,SetValueWithoutNotify,void SetValueWithoutNotify(float)
+CanvasUI.Slider,direction,Slider.Direction direction { get; set; }
+CanvasUI.Slider,fillRect,RectTransform fillRect { get; set; }
+CanvasUI.Slider,handleRect,RectTransform handleRect { get; set; }
+CanvasUI.Slider,maxValue,float maxValue { get; set; }
+CanvasUI.Slider,minValue,float minValue { get; set; }
+CanvasUI.Slider,normalizedValue,float normalizedValue { get; set; }
+CanvasUI.Slider,onValueChanged,Slider.SliderEvent onValueChanged { get; set; }
+CanvasUI.Slider,value,float value { get; set; }
+CanvasUI.Slider,wholeNumbers,bool wholeNumbers { get; set; }
+CanvasUI.Slider.Direction,BottomToTop,CanvasUI.Slider.Direction.BottomToTop = 2
+CanvasUI.Slider.Direction,LeftToRight,CanvasUI.Slider.Direction.LeftToRight = 0
+CanvasUI.Slider.Direction,RightToLeft,CanvasUI.Slider.Direction.RightToLeft = 1
+CanvasUI.Slider.Direction,TopToBottom,CanvasUI.Slider.Direction.TopToBottom = 3
+CanvasUI.Slider.SliderEvent,.ctor,SliderEvent()
+CanvasUI.SpriteState,disabledSprite,Sprite disabledSprite { get; set; }
+CanvasUI.SpriteState,highlightedSprite,Sprite highlightedSprite { get; set; }
+CanvasUI.SpriteState,pressedSprite,Sprite pressedSprite { get; set; }
+CanvasUI.SpriteState,selectedSprite,Sprite selectedSprite { get; set; }
+CanvasUI.StencilMaterial,Add,"static Material Add(Material, int, StencilOp, CompareFunction, ColorWriteMask) / static Material Add(Material, int, StencilOp, CompareFunction, ColorWriteMask, int, int)"
+CanvasUI.StencilMaterial,ClearAll,static void ClearAll()
+CanvasUI.StencilMaterial,Remove,static void Remove(Material)
+CanvasUI.TextDefaultControls,CreateButton,static GameObject CreateButton(TextDefaultControls.Resources)
+CanvasUI.TextDefaultControls,CreateDropdown,static GameObject CreateDropdown(TextDefaultControls.Resources)
+CanvasUI.TextDefaultControls,CreateInputField,static GameObject CreateInputField(TextDefaultControls.Resources)
+CanvasUI.TextDefaultControls,CreateScrollbar,static GameObject CreateScrollbar(TextDefaultControls.Resources)
+CanvasUI.TextDefaultControls,CreateText,static GameObject CreateText(TextDefaultControls.Resources)
+CanvasUI.TextDefaultControls.Resources,background,Sprite background
+CanvasUI.TextDefaultControls.Resources,checkmark,Sprite checkmark
+CanvasUI.TextDefaultControls.Resources,dropdown,Sprite dropdown
+CanvasUI.TextDefaultControls.Resources,inputField,Sprite inputField
+CanvasUI.TextDefaultControls.Resources,knob,Sprite knob
+CanvasUI.TextDefaultControls.Resources,mask,Sprite mask
+CanvasUI.TextDefaultControls.Resources,standard,Sprite standard
+CanvasUI.TextInput,.ctor,TextInput()
+CanvasUI.TextInput,ActivateInputField,void ActivateInputField()
+CanvasUI.TextInput,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+CanvasUI.TextInput,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+CanvasUI.TextInput,DeactivateInputField,void DeactivateInputField(bool = False)
+CanvasUI.TextInput,FindSelectableOnDown,Selectable FindSelectableOnDown()
+CanvasUI.TextInput,FindSelectableOnLeft,Selectable FindSelectableOnLeft()
+CanvasUI.TextInput,FindSelectableOnRight,Selectable FindSelectableOnRight()
+CanvasUI.TextInput,FindSelectableOnUp,Selectable FindSelectableOnUp()
+CanvasUI.TextInput,ForceLabelUpdate,void ForceLabelUpdate()
+CanvasUI.TextInput,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.TextInput,IsActive,bool IsActive()
+CanvasUI.TextInput,IsInteractable,bool IsInteractable()
+CanvasUI.TextInput,LayoutComplete,void LayoutComplete()
+CanvasUI.TextInput,MoveTextEnd,void MoveTextEnd(bool)
+CanvasUI.TextInput,MoveTextStart,void MoveTextStart(bool)
+CanvasUI.TextInput,MoveToEndOfLine,"void MoveToEndOfLine(bool, bool)"
+CanvasUI.TextInput,MoveToStartOfLine,"void MoveToStartOfLine(bool, bool)"
+CanvasUI.TextInput,OnBeginDrag,void OnBeginDrag(PointerEventData)
+CanvasUI.TextInput,OnControlClick,void OnControlClick()
+CanvasUI.TextInput,OnDeselect,void OnDeselect(BaseEventData)
+CanvasUI.TextInput,OnDrag,void OnDrag(PointerEventData)
+CanvasUI.TextInput,OnEndDrag,void OnEndDrag(PointerEventData)
+CanvasUI.TextInput,OnMove,void OnMove(AxisEventData)
+CanvasUI.TextInput,OnPointerClick,void OnPointerClick(PointerEventData)
+CanvasUI.TextInput,OnPointerDown,void OnPointerDown(PointerEventData)
+CanvasUI.TextInput,OnPointerEnter,void OnPointerEnter(PointerEventData)
+CanvasUI.TextInput,OnPointerExit,void OnPointerExit(PointerEventData)
+CanvasUI.TextInput,OnPointerUp,void OnPointerUp(PointerEventData)
+CanvasUI.TextInput,OnScroll,void OnScroll(PointerEventData)
+CanvasUI.TextInput,OnSelect,void OnSelect(BaseEventData)
+CanvasUI.TextInput,OnSubmit,void OnSubmit(BaseEventData)
+CanvasUI.TextInput,OnUpdateSelected,void OnUpdateSelected(BaseEventData)
+CanvasUI.TextInput,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.TextInput,ReleaseSelection,void ReleaseSelection()
+CanvasUI.TextInput,Select,void Select()
+CanvasUI.TextInput,SetGlobalFontAsset,void SetGlobalFontAsset(FontAsset)
+CanvasUI.TextInput,SetGlobalPointSize,void SetGlobalPointSize(float)
+CanvasUI.TextInput,SetTextWithoutNotify,void SetTextWithoutNotify(string)
+CanvasUI.TextInput,asteriskChar,Char asteriskChar { get; set; }
+CanvasUI.TextInput,caretBlinkRate,float caretBlinkRate { get; set; }
+CanvasUI.TextInput,caretColor,Color caretColor { get; set; }
+CanvasUI.TextInput,caretPosition,int caretPosition { get; set; }
+CanvasUI.TextInput,caretWidth,int caretWidth { get; set; }
+CanvasUI.TextInput,characterLimit,int characterLimit { get; set; }
+CanvasUI.TextInput,characterValidation,TextInput.CharacterValidation characterValidation { get; set; }
+CanvasUI.TextInput,contentType,TextInput.ContentType contentType { get; set; }
+CanvasUI.TextInput,customCaretColor,bool customCaretColor { get; set; }
+CanvasUI.TextInput,flexibleHeight,float flexibleHeight { get; }
+CanvasUI.TextInput,flexibleWidth,float flexibleWidth { get; }
+CanvasUI.TextInput,fontAsset,FontAsset fontAsset { get; set; }
+CanvasUI.TextInput,inputType,TextInput.InputType inputType { get; set; }
+CanvasUI.TextInput,inputValidator,InputValidator inputValidator { get; set; }
+CanvasUI.TextInput,isAlert,bool isAlert { get; set; }
+CanvasUI.TextInput,isFocused,bool isFocused { get; }
+CanvasUI.TextInput,isRichTextEditingAllowed,bool isRichTextEditingAllowed { get; set; }
+CanvasUI.TextInput,keepTextSelectionVisible,bool keepTextSelectionVisible { get; set; }
+CanvasUI.TextInput,layoutPriority,int layoutPriority { get; }
+CanvasUI.TextInput,lineLimit,int lineLimit { get; set; }
+CanvasUI.TextInput,lineType,TextInput.LineType lineType { get; set; }
+CanvasUI.TextInput,minHeight,float minHeight { get; }
+CanvasUI.TextInput,minWidth,float minWidth { get; }
+CanvasUI.TextInput,multiLine,bool multiLine { get; }
+CanvasUI.TextInput,onDeselect,TextInput.SelectionEvent onDeselect { get; set; }
+CanvasUI.TextInput,onEndEdit,TextInput.SubmitEvent onEndEdit { get; set; }
+CanvasUI.TextInput,onEndTextSelection,TextInput.TextSelectionEvent onEndTextSelection { get; set; }
+CanvasUI.TextInput,onFocusSelectAll,bool onFocusSelectAll { get; set; }
+CanvasUI.TextInput,onSelect,TextInput.SelectionEvent onSelect { get; set; }
+CanvasUI.TextInput,onSubmit,TextInput.SubmitEvent onSubmit { get; set; }
+CanvasUI.TextInput,onTextSelection,TextInput.TextSelectionEvent onTextSelection { get; set; }
+CanvasUI.TextInput,onValidateInput,TextInput.OnValidateInput onValidateInput { get; set; }
+CanvasUI.TextInput,onValueChanged,TextInput.OnChangeEvent onValueChanged { get; set; }
+CanvasUI.TextInput,placeholder,Graphic placeholder { get; set; }
+CanvasUI.TextInput,pointSize,float pointSize { get; set; }
+CanvasUI.TextInput,preferredHeight,float preferredHeight { get; }
+CanvasUI.TextInput,preferredWidth,float preferredWidth { get; }
+CanvasUI.TextInput,readOnly,bool readOnly { get; set; }
+CanvasUI.TextInput,resetOnDeActivation,bool resetOnDeActivation { get; set; }
+CanvasUI.TextInput,restoreOriginalTextOnEscape,bool restoreOriginalTextOnEscape { get; set; }
+CanvasUI.TextInput,richText,bool richText { get; set; }
+CanvasUI.TextInput,scrollSensitivity,float scrollSensitivity { get; set; }
+CanvasUI.TextInput,selectionAnchorPosition,int selectionAnchorPosition { get; set; }
+CanvasUI.TextInput,selectionColor,Color selectionColor { get; set; }
+CanvasUI.TextInput,selectionFocusPosition,int selectionFocusPosition { get; set; }
+CanvasUI.TextInput,selectionStringAnchorPosition,int selectionStringAnchorPosition { get; set; }
+CanvasUI.TextInput,selectionStringFocusPosition,int selectionStringFocusPosition { get; set; }
+CanvasUI.TextInput,shouldActivateOnSelect,bool shouldActivateOnSelect { get; set; }
+CanvasUI.TextInput,shouldHideMobileInput,bool shouldHideMobileInput { get; set; }
+CanvasUI.TextInput,shouldHideSoftKeyboard,bool shouldHideSoftKeyboard { get; set; }
+CanvasUI.TextInput,stringPosition,int stringPosition { get; set; }
+CanvasUI.TextInput,text,string text { get; set; }
+CanvasUI.TextInput,textComponent,TextBase textComponent { get; set; }
+CanvasUI.TextInput,textViewport,RectTransform textViewport { get; set; }
+CanvasUI.TextInput,verticalScrollbar,Scrollbar verticalScrollbar { get; set; }
+CanvasUI.TextInput,wasCanceled,bool wasCanceled { get; }
+CanvasUI.TextInput.CharacterValidation,Alphanumeric,CanvasUI.TextInput.CharacterValidation.Alphanumeric = 4
+CanvasUI.TextInput.CharacterValidation,CustomValidator,CanvasUI.TextInput.CharacterValidation.CustomValidator = 8
+CanvasUI.TextInput.CharacterValidation,Decimal,CanvasUI.TextInput.CharacterValidation.Decimal = 3
+CanvasUI.TextInput.CharacterValidation,Digit,CanvasUI.TextInput.CharacterValidation.Digit = 1
+CanvasUI.TextInput.CharacterValidation,EmailAddress,CanvasUI.TextInput.CharacterValidation.EmailAddress = 7
+CanvasUI.TextInput.CharacterValidation,Integer,CanvasUI.TextInput.CharacterValidation.Integer = 2
+CanvasUI.TextInput.CharacterValidation,Name,CanvasUI.TextInput.CharacterValidation.Name = 5
+CanvasUI.TextInput.CharacterValidation,None,CanvasUI.TextInput.CharacterValidation.None = 0
+CanvasUI.TextInput.CharacterValidation,Regex,CanvasUI.TextInput.CharacterValidation.Regex = 6
+CanvasUI.TextInput.ContentType,Alphanumeric,CanvasUI.TextInput.ContentType.Alphanumeric = 4
+CanvasUI.TextInput.ContentType,Autocorrected,CanvasUI.TextInput.ContentType.Autocorrected = 1
+CanvasUI.TextInput.ContentType,Custom,CanvasUI.TextInput.ContentType.Custom = 9
+CanvasUI.TextInput.ContentType,DecimalNumber,CanvasUI.TextInput.ContentType.DecimalNumber = 3
+CanvasUI.TextInput.ContentType,EmailAddress,CanvasUI.TextInput.ContentType.EmailAddress = 6
+CanvasUI.TextInput.ContentType,IntegerNumber,CanvasUI.TextInput.ContentType.IntegerNumber = 2
+CanvasUI.TextInput.ContentType,Name,CanvasUI.TextInput.ContentType.Name = 5
+CanvasUI.TextInput.ContentType,Password,CanvasUI.TextInput.ContentType.Password = 7
+CanvasUI.TextInput.ContentType,Pin,CanvasUI.TextInput.ContentType.Pin = 8
+CanvasUI.TextInput.ContentType,Standard,CanvasUI.TextInput.ContentType.Standard = 0
+CanvasUI.TextInput.EditState,Continue,CanvasUI.TextInput.EditState.Continue = 0
+CanvasUI.TextInput.EditState,Finish,CanvasUI.TextInput.EditState.Finish = 1
+CanvasUI.TextInput.InputType,AutoCorrect,CanvasUI.TextInput.InputType.AutoCorrect = 1
+CanvasUI.TextInput.InputType,Password,CanvasUI.TextInput.InputType.Password = 2
+CanvasUI.TextInput.InputType,Standard,CanvasUI.TextInput.InputType.Standard = 0
+CanvasUI.TextInput.LineType,MultiLineNewline,CanvasUI.TextInput.LineType.MultiLineNewline = 2
+CanvasUI.TextInput.LineType,MultiLineSubmit,CanvasUI.TextInput.LineType.MultiLineSubmit = 1
+CanvasUI.TextInput.LineType,SingleLine,CanvasUI.TextInput.LineType.SingleLine = 0
+CanvasUI.TextInput.OnChangeEvent,.ctor,OnChangeEvent()
+CanvasUI.TextInput.OnValidateInput,delegate,"Char (string, int, Char)"
+CanvasUI.TextInput.SelectionEvent,.ctor,SelectionEvent()
+CanvasUI.TextInput.SubmitEvent,.ctor,SubmitEvent()
+CanvasUI.TextInput.TextSelectionEvent,.ctor,TextSelectionEvent()
+CanvasUI.TextSubMesh,.ctor,TextSubMesh()
+CanvasUI.TextSubMesh,CrossFadeAlpha,"void CrossFadeAlpha(float, float, bool)"
+CanvasUI.TextSubMesh,CrossFadeColor,"void CrossFadeColor(Color, float, bool, bool) / void CrossFadeColor(Color, float, bool, bool, bool)"
+CanvasUI.TextSubMesh,Cull,"void Cull(Rect, bool)"
+CanvasUI.TextSubMesh,GetModifiedMaterial,Material GetModifiedMaterial(Material)
+CanvasUI.TextSubMesh,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.TextSubMesh,IsActive,bool IsActive()
+CanvasUI.TextSubMesh,LayoutComplete,void LayoutComplete()
+CanvasUI.TextSubMesh,OnCullingChanged,void OnCullingChanged()
+CanvasUI.TextSubMesh,OnRebuildRequested,void OnRebuildRequested()
+CanvasUI.TextSubMesh,Raycast,"bool Raycast(Vector2, Camera)"
+CanvasUI.TextSubMesh,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.TextSubMesh,RecalculateClipping,void RecalculateClipping()
+CanvasUI.TextSubMesh,RecalculateMasking,void RecalculateMasking()
+CanvasUI.TextSubMesh,SetAllDirty,void SetAllDirty()
+CanvasUI.TextSubMesh,SetClipRect,"void SetClipRect(Rect, bool)"
+CanvasUI.TextSubMesh,SetClipSoftness,void SetClipSoftness(Vector2)
+CanvasUI.TextSubMesh,SetLayoutDirty,void SetLayoutDirty()
+CanvasUI.TextSubMesh,SetMaterialDirty,void SetMaterialDirty()
+CanvasUI.TextSubMesh,SetNativeSize,void SetNativeSize()
+CanvasUI.TextSubMesh,SetVerticesDirty,void SetVerticesDirty()
+CanvasUI.TextSubMesh,defaultMaterial,Material defaultMaterial { get; }
+CanvasUI.TextSubMesh,fallbackMaterial,Material fallbackMaterial { get; set; }
+CanvasUI.TextSubMesh,fallbackSourceMaterial,Material fallbackSourceMaterial { get; set; }
+CanvasUI.TextSubMesh,fontAsset,FontAsset fontAsset { get; set; }
+CanvasUI.TextSubMesh,isDefaultMaterial,bool isDefaultMaterial { get; set; }
+CanvasUI.TextSubMesh,mainTexture,Texture mainTexture { get; }
+CanvasUI.TextSubMesh,materialForRendering,Material materialForRendering { get; }
+CanvasUI.TextSubMesh,mesh,Mesh mesh { get; }
+CanvasUI.TextSubMesh,padding,float padding { get; set; }
+CanvasUI.TextSubMesh,sharedMaterial,Material sharedMaterial { get; set; }
+CanvasUI.TextSubMesh,textComponent,CanvasText textComponent { get; }
+CanvasUI.Toggle,.ctor,Toggle()
+CanvasUI.Toggle,FindSelectableOnDown,Selectable FindSelectableOnDown()
+CanvasUI.Toggle,FindSelectableOnLeft,Selectable FindSelectableOnLeft()
+CanvasUI.Toggle,FindSelectableOnRight,Selectable FindSelectableOnRight()
+CanvasUI.Toggle,FindSelectableOnUp,Selectable FindSelectableOnUp()
+CanvasUI.Toggle,GraphicUpdateComplete,void GraphicUpdateComplete()
+CanvasUI.Toggle,IsActive,bool IsActive()
+CanvasUI.Toggle,IsInteractable,bool IsInteractable()
+CanvasUI.Toggle,LayoutComplete,void LayoutComplete()
+CanvasUI.Toggle,OnDeselect,void OnDeselect(BaseEventData)
+CanvasUI.Toggle,OnMove,void OnMove(AxisEventData)
+CanvasUI.Toggle,OnPointerClick,void OnPointerClick(PointerEventData)
+CanvasUI.Toggle,OnPointerDown,void OnPointerDown(PointerEventData)
+CanvasUI.Toggle,OnPointerEnter,void OnPointerEnter(PointerEventData)
+CanvasUI.Toggle,OnPointerExit,void OnPointerExit(PointerEventData)
+CanvasUI.Toggle,OnPointerUp,void OnPointerUp(PointerEventData)
+CanvasUI.Toggle,OnSelect,void OnSelect(BaseEventData)
+CanvasUI.Toggle,OnSubmit,void OnSubmit(BaseEventData)
+CanvasUI.Toggle,Rebuild,void Rebuild(CanvasUpdate)
+CanvasUI.Toggle,Select,void Select()
+CanvasUI.Toggle,SetIsOnWithoutNotify,void SetIsOnWithoutNotify(bool)
+CanvasUI.Toggle,graphic,Graphic graphic { get; set; }
+CanvasUI.Toggle,group,ToggleGroup group { get; set; }
+CanvasUI.Toggle,isOn,bool isOn { get; set; }
+CanvasUI.Toggle,onValueChanged,Toggle.ToggleEvent onValueChanged { get; set; }
+CanvasUI.Toggle,toggleTransition,Toggle.ToggleTransition toggleTransition { get; set; }
+CanvasUI.Toggle.ToggleEvent,.ctor,ToggleEvent()
+CanvasUI.Toggle.ToggleTransition,Fade,CanvasUI.Toggle.ToggleTransition.Fade = 1
+CanvasUI.Toggle.ToggleTransition,None,CanvasUI.Toggle.ToggleTransition.None = 0
+CanvasUI.ToggleGroup,.ctor,ToggleGroup()
+CanvasUI.ToggleGroup,ActiveToggles,IEnumerable<Toggle> ActiveToggles()
+CanvasUI.ToggleGroup,AnyTogglesOn,bool AnyTogglesOn()
+CanvasUI.ToggleGroup,EnsureValidState,void EnsureValidState()
+CanvasUI.ToggleGroup,GetFirstActiveToggle,Toggle GetFirstActiveToggle()
+CanvasUI.ToggleGroup,IsActive,bool IsActive()
+CanvasUI.ToggleGroup,NotifyToggleOn,"void NotifyToggleOn(Toggle, bool = True)"
+CanvasUI.ToggleGroup,RegisterToggle,void RegisterToggle(Toggle)
+CanvasUI.ToggleGroup,SetAllTogglesOff,void SetAllTogglesOff(bool = True)
+CanvasUI.ToggleGroup,UnregisterToggle,void UnregisterToggle(Toggle)
+CanvasUI.ToggleGroup,allowSwitchOff,bool allowSwitchOff { get; set; }
+CanvasUI.VertexHelper,.ctor,VertexHelper() / VertexHelper(Mesh)
+CanvasUI.VertexHelper,AddTriangle,"void AddTriangle(int, int, int)"
+CanvasUI.VertexHelper,AddUIVertexQuad,void AddUIVertexQuad(UIVertex[])
+CanvasUI.VertexHelper,AddUIVertexStream,"void AddUIVertexStream(List<UIVertex>, List<int>)"
+CanvasUI.VertexHelper,AddUIVertexTriangleStream,void AddUIVertexTriangleStream(List<UIVertex>)
+CanvasUI.VertexHelper,AddVert,"void AddVert(Vector3, Color32, Vector4, Vector4, Vector4, Vector4, Vector3, Vector4) / void AddVert(Vector3, Color32, Vector4, Vector4, Vector3, Vector4) / void AddVert(Vector3, Color32, Vector4) / void AddVert(UIVertex)"
+CanvasUI.VertexHelper,Clear,void Clear()
+CanvasUI.VertexHelper,Dispose,void Dispose()
+CanvasUI.VertexHelper,FillMesh,void FillMesh(Mesh)
+CanvasUI.VertexHelper,GetUIVertexStream,void GetUIVertexStream(List<UIVertex>)
+CanvasUI.VertexHelper,PopulateUIVertex,"void PopulateUIVertex(ref UIVertex, int)"
+CanvasUI.VertexHelper,SetUIVertex,"void SetUIVertex(UIVertex, int)"
+CanvasUI.VertexHelper,currentIndexCount,int currentIndexCount { get; }
+CanvasUI.VertexHelper,currentVertCount,int currentVertCount { get; }
+CanvasUI.VertexHelper,operators,"Equality(VertexHelper, VertexHelper) / Inequality(VertexHelper, VertexHelper) / Implicit(VertexHelper)"
+CanvasUI.VerticalLayoutGroup,.ctor,VerticalLayoutGroup()
+CanvasUI.VerticalLayoutGroup,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+CanvasUI.VerticalLayoutGroup,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+CanvasUI.VerticalLayoutGroup,IsActive,bool IsActive()
+CanvasUI.VerticalLayoutGroup,SetLayoutHorizontal,void SetLayoutHorizontal()
+CanvasUI.VerticalLayoutGroup,SetLayoutVertical,void SetLayoutVertical()
+CanvasUI.VerticalLayoutGroup,flexibleHeight,float flexibleHeight { get; }
+CanvasUI.VerticalLayoutGroup,flexibleWidth,float flexibleWidth { get; }
+CanvasUI.VerticalLayoutGroup,layoutPriority,int layoutPriority { get; }
+CanvasUI.VerticalLayoutGroup,minHeight,float minHeight { get; }
+CanvasUI.VerticalLayoutGroup,minWidth,float minWidth { get; }
+CanvasUI.VerticalLayoutGroup,preferredHeight,float preferredHeight { get; }
+CanvasUI.VerticalLayoutGroup,preferredWidth,float preferredWidth { get; }
+Text.CaretPosition,Left,Text.CaretPosition.Left = 1
+Text.CaretPosition,None,Text.CaretPosition.None = 0
+Text.CaretPosition,Right,Text.CaretPosition.Right = 2
+Text.CharacterInfo,ascender,float ascender
+Text.CharacterInfo,aspectRatio,float aspectRatio
+Text.CharacterInfo,baseLine,float baseLine
+Text.CharacterInfo,bottomLeft,Vector3 bottomLeft
+Text.CharacterInfo,bottomRight,Vector3 bottomRight
+Text.CharacterInfo,character,Char character
+Text.CharacterInfo,color,Color32 color
+Text.CharacterInfo,descender,float descender
+Text.CharacterInfo,elementType,TextElementType elementType
+Text.CharacterInfo,fontAsset,FontAsset fontAsset
+Text.CharacterInfo,highlightColor,Color32 highlightColor
+Text.CharacterInfo,index,int index
+Text.CharacterInfo,isUsingAlternateTypeface,bool isUsingAlternateTypeface
+Text.CharacterInfo,isVisible,bool isVisible
+Text.CharacterInfo,lineNumber,int lineNumber
+Text.CharacterInfo,material,Material material
+Text.CharacterInfo,materialReferenceIndex,int materialReferenceIndex
+Text.CharacterInfo,origin,float origin
+Text.CharacterInfo,pageNumber,int pageNumber
+Text.CharacterInfo,pointSize,float pointSize
+Text.CharacterInfo,scale,float scale
+Text.CharacterInfo,strikethroughColor,Color32 strikethroughColor
+Text.CharacterInfo,strikethroughVertexIndex,int strikethroughVertexIndex
+Text.CharacterInfo,stringLength,int stringLength
+Text.CharacterInfo,style,FontStyles style
+Text.CharacterInfo,topLeft,Vector3 topLeft
+Text.CharacterInfo,topRight,Vector3 topRight
+Text.CharacterInfo,underlineColor,Color32 underlineColor
+Text.CharacterInfo,underlineVertexIndex,int underlineVertexIndex
+Text.CharacterInfo,vertexIndex,int vertexIndex
+Text.CharacterInfo,vertex_BL,Vertex vertex_BL
+Text.CharacterInfo,vertex_BR,Vertex vertex_BR
+Text.CharacterInfo,vertex_TL,Vertex vertex_TL
+Text.CharacterInfo,vertex_TR,Vertex vertex_TR
+Text.CharacterInfo,xAdvance,float xAdvance
+Text.ColorMode,FourCornersGradient,Text.ColorMode.FourCornersGradient = 3
+Text.ColorMode,HorizontalGradient,Text.ColorMode.HorizontalGradient = 1
+Text.ColorMode,Single,Text.ColorMode.Single = 0
+Text.ColorMode,VerticalGradient,Text.ColorMode.VerticalGradient = 2
+Text.Extents,max,Vector2 max
+Text.Extents,min,Vector2 min
+Text.FastAction,.ctor,FastAction() / FastAction() / FastAction() / FastAction()
+Text.FastAction,Add,"void Add(Action) / void Add(Action<A>) / void Add(Action<A, B>) / void Add(Action<A, B, C>)"
+Text.FastAction,Call,"void Call() / void Call(A) / void Call(A, B) / void Call(A, B, C)"
+Text.FastAction,Remove,"void Remove(Action) / void Remove(Action<A>) / void Remove(Action<A, B>) / void Remove(Action<A, B, C>)"
+Text.FontAssetUtilities,.ctor,FontAssetUtilities()
+Text.FontAssetUtilities,GetCharacterFromFontAsset,"static Character GetCharacterFromFontAsset(uint, FontAsset, bool, FontStyles, FontWeight, out bool)"
+Text.FontAssetUtilities,GetCharacterFromFontAssets,"static Character GetCharacterFromFontAssets(uint, FontAsset, List<FontAsset>, bool, FontStyles, FontWeight, out bool)"
+Text.FontAssetUtilities,GetSpriteCharacterFromSpriteAsset,"static SpriteCharacter GetSpriteCharacterFromSpriteAsset(uint, SpriteAsset, bool)"
+Text.FontAssetUtilities,instance,static FontAssetUtilities instance { get; }
+Text.FontStyles,Bold,Text.FontStyles.Bold = 1
+Text.FontStyles,Highlight,Text.FontStyles.Highlight = 512
+Text.FontStyles,Italic,Text.FontStyles.Italic = 2
+Text.FontStyles,LowerCase,Text.FontStyles.LowerCase = 8
+Text.FontStyles,Normal,Text.FontStyles.Normal = 0
+Text.FontStyles,SmallCaps,Text.FontStyles.SmallCaps = 32
+Text.FontStyles,Strikethrough,Text.FontStyles.Strikethrough = 64
+Text.FontStyles,Subscript,Text.FontStyles.Subscript = 256
+Text.FontStyles,Superscript,Text.FontStyles.Superscript = 128
+Text.FontStyles,Underline,Text.FontStyles.Underline = 4
+Text.FontStyles,UpperCase,Text.FontStyles.UpperCase = 16
+Text.FontUtilities,SearchForCharacter,"static FontAsset SearchForCharacter(FontAsset, uint, out Character) / static FontAsset SearchForCharacter(List<FontAsset>, uint, out Character)"
+Text.FontWeight,Black,Text.FontWeight.Black = 900
+Text.FontWeight,Bold,Text.FontWeight.Bold = 700
+Text.FontWeight,ExtraLight,Text.FontWeight.ExtraLight = 200
+Text.FontWeight,Heavy,Text.FontWeight.Heavy = 800
+Text.FontWeight,Light,Text.FontWeight.Light = 300
+Text.FontWeight,Medium,Text.FontWeight.Medium = 500
+Text.FontWeight,Regular,Text.FontWeight.Regular = 400
+Text.FontWeight,SemiBold,Text.FontWeight.SemiBold = 600
+Text.FontWeight,Thin,Text.FontWeight.Thin = 100
+Text.HighlightState,.ctor,"HighlightState(Color32, Offset)"
+Text.HighlightState,color,Color32 color
+Text.HighlightState,operators,"Equality(HighlightState, HighlightState) / Inequality(HighlightState, HighlightState)"
+Text.HighlightState,padding,Offset padding
+Text.HorizontalAlignmentOptions,Center,Text.HorizontalAlignmentOptions.Center = 2
+Text.HorizontalAlignmentOptions,Flush,Text.HorizontalAlignmentOptions.Flush = 16
+Text.HorizontalAlignmentOptions,Geometry,Text.HorizontalAlignmentOptions.Geometry = 32
+Text.HorizontalAlignmentOptions,Justified,Text.HorizontalAlignmentOptions.Justified = 8
+Text.HorizontalAlignmentOptions,Left,Text.HorizontalAlignmentOptions.Left = 1
+Text.HorizontalAlignmentOptions,Right,Text.HorizontalAlignmentOptions.Right = 4
+Text.ITextPreprocessor,PreprocessText,string PreprocessText(string)
+Text.InputValidator,.ctor,InputValidator()
+Text.InputValidator,Validate,"Char Validate(ref string, ref int, Char)"
+Text.LineInfo,alignment,HorizontalAlignmentOptions alignment
+Text.LineInfo,ascender,float ascender
+Text.LineInfo,baseline,float baseline
+Text.LineInfo,characterCount,int characterCount
+Text.LineInfo,descender,float descender
+Text.LineInfo,firstCharacterIndex,int firstCharacterIndex
+Text.LineInfo,firstVisibleCharacterIndex,int firstVisibleCharacterIndex
+Text.LineInfo,lastCharacterIndex,int lastCharacterIndex
+Text.LineInfo,lastVisibleCharacterIndex,int lastVisibleCharacterIndex
+Text.LineInfo,length,float length
+Text.LineInfo,lineExtents,Extents lineExtents
+Text.LineInfo,lineHeight,float lineHeight
+Text.LineInfo,marginLeft,float marginLeft
+Text.LineInfo,marginRight,float marginRight
+Text.LineInfo,maxAdvance,float maxAdvance
+Text.LineInfo,spaceCount,int spaceCount
+Text.LineInfo,visibleCharacterCount,int visibleCharacterCount
+Text.LineInfo,visibleSpaceCount,int visibleSpaceCount
+Text.LineInfo,width,float width
+Text.LineInfo,wordCount,int wordCount
+Text.LinkInfo,GetLink,string GetLink()
+Text.LinkInfo,GetLinkID,string GetLinkID()
+Text.LinkInfo,GetLinkText,string GetLinkText()
+Text.LinkInfo,hashCode,int hashCode
+Text.LinkInfo,linkIdFirstCharacterIndex,int linkIdFirstCharacterIndex
+Text.LinkInfo,linkIdLength,int linkIdLength
+Text.LinkInfo,linkTextLength,int linkTextLength
+Text.LinkInfo,linkTextfirstCharacterIndex,int linkTextfirstCharacterIndex
+Text.LinkInfo,textComponent,TextBase textComponent
+Text.MaskingOffsetMode,Percentage,Text.MaskingOffsetMode.Percentage = 0
+Text.MaskingOffsetMode,Pixel,Text.MaskingOffsetMode.Pixel = 1
+Text.MaskingTypes,MaskHard,Text.MaskingTypes.MaskHard = 1
+Text.MaskingTypes,MaskOff,Text.MaskingTypes.MaskOff = 0
+Text.MaskingTypes,MaskSoft,Text.MaskingTypes.MaskSoft = 2
+Text.MaterialManager,CleanupFallbackMaterials,static void CleanupFallbackMaterials()
+Text.MaterialManager,ClearMaterials,static void ClearMaterials()
+Text.MaterialManager,CopyMaterialPresetProperties,"static void CopyMaterialPresetProperties(Material, Material)"
+Text.MaterialManager,GetBaseMaterial,static Material GetBaseMaterial(Material)
+Text.MaterialManager,GetFallbackMaterial,"static Material GetFallbackMaterial(Material, Material)"
+Text.MaterialManager,GetMaterialForRendering,"static Material GetMaterialForRendering(MaskableGraphic, Material)"
+Text.MaterialManager,GetStencilID,static int GetStencilID(GameObject)
+Text.MaterialManager,GetStencilMaterial,"static Material GetStencilMaterial(Material, int)"
+Text.MaterialManager,ReleaseFallbackMaterial,static void ReleaseFallbackMaterial(Material)
+Text.MaterialManager,ReleaseStencilMaterial,static void ReleaseStencilMaterial(Material)
+Text.MaterialManager,SetStencil,"static Material SetStencil(Material, int)"
+Text.MaterialReference,.ctor,"MaterialReference(int, FontAsset, Material, float)"
+Text.MaterialReference,fallbackMaterial,Material fallbackMaterial
+Text.MaterialReference,fontAsset,FontAsset fontAsset
+Text.MaterialReference,index,int index
+Text.MaterialReference,isDefaultMaterial,bool isDefaultMaterial
+Text.MaterialReference,isFallbackMaterial,bool isFallbackMaterial
+Text.MaterialReference,material,Material material
+Text.MaterialReference,padding,float padding
+Text.MaterialReference,referenceCount,int referenceCount
+Text.MaterialReferenceManager,AddColorGradientPreset,"static void AddColorGradientPreset(int, TextColorGradient)"
+Text.MaterialReferenceManager,AddFontAsset,static void AddFontAsset(FontAsset)
+Text.MaterialReferenceManager,AddFontMaterial,"static void AddFontMaterial(int, Material)"
+Text.MaterialReferenceManager,AddSpriteAsset,"static void AddSpriteAsset(SpriteAsset) / static void AddSpriteAsset(int, SpriteAsset)"
+Text.MaterialReferenceManager,TryGetColorGradientPreset,"static bool TryGetColorGradientPreset(int, out TextColorGradient)"
+Text.MaterialReferenceManager,TryGetFontAsset,"static bool TryGetFontAsset(int, out FontAsset)"
+Text.MaterialReferenceManager,TryGetMaterial,"static bool TryGetMaterial(int, out Material)"
+Text.MaterialReferenceManager,TryGetSpriteAsset,"static bool TryGetSpriteAsset(int, out SpriteAsset)"
+Text.Math,Approximately,"static bool Approximately(float, float)"
+Text.Math,FLOAT_MAX,const float FLOAT_MAX
+Text.Math,FLOAT_MIN,const float FLOAT_MIN
+Text.Math,FLOAT_UNSET,const float FLOAT_UNSET
+Text.Math,INT_MAX,const int INT_MAX
+Text.Math,INT_MIN,const int INT_MIN
+Text.Math,INT_UNSET,const int INT_UNSET
+Text.Math,MAX_16BIT,static Vector2 MAX_16BIT
+Text.Math,MIN_16BIT,static Vector2 MIN_16BIT
+Text.MeshInfo,.ctor,"MeshInfo(Mesh, int) / MeshInfo(Mesh, int, bool)"
+Text.MeshInfo,Clear,void Clear() / void Clear(bool)
+Text.MeshInfo,ClearUnusedVertices,void ClearUnusedVertices() / void ClearUnusedVertices(int)
+Text.MeshInfo,ResizeMeshInfo,void ResizeMeshInfo(int)
+Text.MeshInfo,SortGeometry,void SortGeometry(VertexSortingOrder)
+Text.MeshInfo,SwapVertexData,"void SwapVertexData(int, int)"
+Text.MeshInfo,colors32,Color32[] colors32
+Text.MeshInfo,material,Material material
+Text.MeshInfo,mesh,Mesh mesh
+Text.MeshInfo,normals,Vector3[] normals
+Text.MeshInfo,tangents,Vector4[] tangents
+Text.MeshInfo,triangles,int[] triangles
+Text.MeshInfo,uvs0,Vector4[] uvs0
+Text.MeshInfo,uvs2,Vector2[] uvs2
+Text.MeshInfo,vertexCount,int vertexCount
+Text.MeshInfo,vertices,Vector3[] vertices
+Text.Offset,.ctor,"Offset(float, float, float, float) / Offset(float, float)"
+Text.Offset,bottom,float bottom
+Text.Offset,horizontal,float horizontal { get; set; }
+Text.Offset,left,float left
+Text.Offset,operators,"Equality(Offset, Offset) / Inequality(Offset, Offset) / Multiply(Offset, float)"
+Text.Offset,right,float right
+Text.Offset,top,float top
+Text.Offset,vertical,float vertical { get; set; }
+Text.Offset,zero,static Offset zero { get; }
+Text.PageInfo,ascender,float ascender
+Text.PageInfo,baseLine,float baseLine
+Text.PageInfo,descender,float descender
+Text.PageInfo,firstCharacterIndex,int firstCharacterIndex
+Text.PageInfo,lastCharacterIndex,int lastCharacterIndex
+Text.ResourceManager,AddFontAsset,static void AddFontAsset(FontAsset)
+Text.ResourceManager,GetTextSettings,static TextSettings GetTextSettings()
+Text.ShaderUtilities,GetFontExtent,static Vector4 GetFontExtent(Material)
+Text.ShaderUtilities,GetPadding,"static float GetPadding(Material, bool, bool) / static float GetPadding(Material[], bool, bool)"
+Text.ShaderUtilities,GetShaderPropertyIDs,static void GetShaderPropertyIDs()
+Text.ShaderUtilities,ID_ClipRect,static int ID_ClipRect
+Text.ShaderUtilities,ID_FaceColor,static int ID_FaceColor
+Text.ShaderUtilities,ID_FaceDilate,static int ID_FaceDilate
+Text.ShaderUtilities,ID_FaceTex,static int ID_FaceTex
+Text.ShaderUtilities,ID_GradientScale,static int ID_GradientScale
+Text.ShaderUtilities,ID_MainTex,static int ID_MainTex
+Text.ShaderUtilities,ID_MaskSoftnessX,static int ID_MaskSoftnessX
+Text.ShaderUtilities,ID_MaskSoftnessY,static int ID_MaskSoftnessY
+Text.ShaderUtilities,ID_OutlineColor,static int ID_OutlineColor
+Text.ShaderUtilities,ID_OutlineSoftness,static int ID_OutlineSoftness
+Text.ShaderUtilities,ID_OutlineTex,static int ID_OutlineTex
+Text.ShaderUtilities,ID_OutlineWidth,static int ID_OutlineWidth
+Text.ShaderUtilities,ID_PerspectiveFilter,static int ID_PerspectiveFilter
+Text.ShaderUtilities,ID_ScaleRatio_A,static int ID_ScaleRatio_A
+Text.ShaderUtilities,ID_ScaleRatio_B,static int ID_ScaleRatio_B
+Text.ShaderUtilities,ID_ScaleRatio_C,static int ID_ScaleRatio_C
+Text.ShaderUtilities,ID_ScaleX,static int ID_ScaleX
+Text.ShaderUtilities,ID_ScaleY,static int ID_ScaleY
+Text.ShaderUtilities,ID_ShaderFlags,static int ID_ShaderFlags
+Text.ShaderUtilities,ID_Sharpness,static int ID_Sharpness
+Text.ShaderUtilities,ID_Shininess,static int ID_Shininess
+Text.ShaderUtilities,ID_StencilComp,static int ID_StencilComp
+Text.ShaderUtilities,ID_StencilID,static int ID_StencilID
+Text.ShaderUtilities,ID_StencilOp,static int ID_StencilOp
+Text.ShaderUtilities,ID_StencilReadMask,static int ID_StencilReadMask
+Text.ShaderUtilities,ID_StencilWriteMask,static int ID_StencilWriteMask
+Text.ShaderUtilities,ID_TextureHeight,static int ID_TextureHeight
+Text.ShaderUtilities,ID_TextureWidth,static int ID_TextureWidth
+Text.ShaderUtilities,ID_UnderlayColor,static int ID_UnderlayColor
+Text.ShaderUtilities,ID_UnderlayDilate,static int ID_UnderlayDilate
+Text.ShaderUtilities,ID_UnderlayOffsetX,static int ID_UnderlayOffsetX
+Text.ShaderUtilities,ID_UnderlayOffsetY,static int ID_UnderlayOffsetY
+Text.ShaderUtilities,ID_UnderlaySoftness,static int ID_UnderlaySoftness
+Text.ShaderUtilities,ID_WeightBold,static int ID_WeightBold
+Text.ShaderUtilities,ID_WeightNormal,static int ID_WeightNormal
+Text.ShaderUtilities,IsMaskingEnabled,static bool IsMaskingEnabled(Material)
+Text.ShaderUtilities,Keyword_Bevel,static string Keyword_Bevel
+Text.ShaderUtilities,Keyword_Glow,static string Keyword_Glow
+Text.ShaderUtilities,Keyword_MASK_HARD,static string Keyword_MASK_HARD
+Text.ShaderUtilities,Keyword_MASK_SOFT,static string Keyword_MASK_SOFT
+Text.ShaderUtilities,Keyword_MASK_TEX,static string Keyword_MASK_TEX
+Text.ShaderUtilities,Keyword_Outline,static string Keyword_Outline
+Text.ShaderUtilities,Keyword_Ratios,static string Keyword_Ratios
+Text.ShaderUtilities,Keyword_Underlay,static string Keyword_Underlay
+Text.ShaderUtilities,ShaderRef_MobileBitmap,static Shader ShaderRef_MobileBitmap { get; }
+Text.ShaderUtilities,ShaderRef_MobileSDF,static Shader ShaderRef_MobileSDF { get; }
+Text.ShaderUtilities,ShaderTag_CullMode,static string ShaderTag_CullMode
+Text.ShaderUtilities,ShaderTag_ZTestMode,static string ShaderTag_ZTestMode
+Text.ShaderUtilities,UpdateShaderRatios,static void UpdateShaderRatios(Material)
+Text.SpriteAnimator,.ctor,SpriteAnimator()
+Text.SpriteAnimator,DoSpriteAnimation,"void DoSpriteAnimation(int, SpriteAsset, int, int, int)"
+Text.SpriteAnimator,StopAllAnimations,void StopAllAnimations()
+Text.SpriteAsset,.ctor,SpriteAsset()
+Text.SpriteAsset,GetSpriteIndexFromHashcode,int GetSpriteIndexFromHashcode(int)
+Text.SpriteAsset,GetSpriteIndexFromName,int GetSpriteIndexFromName(string)
+Text.SpriteAsset,GetSpriteIndexFromUnicode,int GetSpriteIndexFromUnicode(uint)
+Text.SpriteAsset,SearchForSpriteByHashCode,"static SpriteAsset SearchForSpriteByHashCode(SpriteAsset, int, bool, out int)"
+Text.SpriteAsset,SearchForSpriteByUnicode,"static SpriteAsset SearchForSpriteByUnicode(SpriteAsset, uint, bool, out int)"
+Text.SpriteAsset,SortGlyphTable,void SortGlyphTable()
+Text.SpriteAsset,UpdateLookupTables,void UpdateLookupTables()
+Text.SpriteAsset,faceInfo,FaceInfo faceInfo { get; set; }
+Text.SpriteAsset,fallbackSpriteAssets,List<SpriteAsset> fallbackSpriteAssets { get; set; }
+Text.SpriteAsset,spriteCharacterLookupTable,"Dictionary<uint, SpriteCharacter> spriteCharacterLookupTable { get; }"
+Text.SpriteAsset,spriteCharacterTable,List<SpriteCharacter> spriteCharacterTable { get; set; }
+Text.SpriteAsset,spriteGlyphTable,List<SpriteGlyph> spriteGlyphTable { get; set; }
+Text.SpriteAsset,spriteInfoList,List<SpriteCharacter> spriteInfoList { get; }
+Text.SpriteAsset,spriteSheet,Texture spriteSheet { get; set; }
+Text.SpriteCharacter,.ctor,"SpriteCharacter() / SpriteCharacter(uint, SpriteGlyph) / SpriteCharacter(uint, SpriteAsset, SpriteGlyph) / SpriteCharacter(uint, uint)"
+Text.SpriteCharacter,hashCode,int hashCode { get; }
+Text.SpriteCharacter,name,string name { get; set; }
+Text.SpriteGlyph,.ctor,"SpriteGlyph() / SpriteGlyph(uint, GlyphMetrics, GlyphRect, float, int) / SpriteGlyph(uint, GlyphMetrics, GlyphRect, float, int, Sprite)"
+Text.SpriteGlyph,sprite,Sprite sprite
+Text.TagUnitType,FontUnits,Text.TagUnitType.FontUnits = 1
+Text.TagUnitType,Percentage,Text.TagUnitType.Percentage = 2
+Text.TagUnitType,Pixels,Text.TagUnitType.Pixels = 0
+Text.TagValueType,ColorValue,Text.TagValueType.ColorValue = 4
+Text.TagValueType,None,Text.TagValueType.None = 0
+Text.TagValueType,NumericalValue,Text.TagValueType.NumericalValue = 1
+Text.TagValueType,StringValue,Text.TagValueType.StringValue = 2
+Text.TextAlignmentOptions,Baseline,Text.TextAlignmentOptions.Baseline = 2050
+Text.TextAlignmentOptions,BaselineFlush,Text.TextAlignmentOptions.BaselineFlush = 2064
+Text.TextAlignmentOptions,BaselineGeoAligned,Text.TextAlignmentOptions.BaselineGeoAligned = 2080
+Text.TextAlignmentOptions,BaselineJustified,Text.TextAlignmentOptions.BaselineJustified = 2056
+Text.TextAlignmentOptions,BaselineLeft,Text.TextAlignmentOptions.BaselineLeft = 2049
+Text.TextAlignmentOptions,BaselineRight,Text.TextAlignmentOptions.BaselineRight = 2052
+Text.TextAlignmentOptions,Bottom,Text.TextAlignmentOptions.Bottom = 1026
+Text.TextAlignmentOptions,BottomFlush,Text.TextAlignmentOptions.BottomFlush = 1040
+Text.TextAlignmentOptions,BottomGeoAligned,Text.TextAlignmentOptions.BottomGeoAligned = 1056
+Text.TextAlignmentOptions,BottomJustified,Text.TextAlignmentOptions.BottomJustified = 1032
+Text.TextAlignmentOptions,BottomLeft,Text.TextAlignmentOptions.BottomLeft = 1025
+Text.TextAlignmentOptions,BottomRight,Text.TextAlignmentOptions.BottomRight = 1028
+Text.TextAlignmentOptions,Capline,Text.TextAlignmentOptions.Capline = 8194
+Text.TextAlignmentOptions,CaplineFlush,Text.TextAlignmentOptions.CaplineFlush = 8208
+Text.TextAlignmentOptions,CaplineGeoAligned,Text.TextAlignmentOptions.CaplineGeoAligned = 8224
+Text.TextAlignmentOptions,CaplineJustified,Text.TextAlignmentOptions.CaplineJustified = 8200
+Text.TextAlignmentOptions,CaplineLeft,Text.TextAlignmentOptions.CaplineLeft = 8193
+Text.TextAlignmentOptions,CaplineRight,Text.TextAlignmentOptions.CaplineRight = 8196
+Text.TextAlignmentOptions,Center,Text.TextAlignmentOptions.Center = 514
+Text.TextAlignmentOptions,CenterGeoAligned,Text.TextAlignmentOptions.CenterGeoAligned = 544
+Text.TextAlignmentOptions,Converted,Text.TextAlignmentOptions.Converted = 65535
+Text.TextAlignmentOptions,Flush,Text.TextAlignmentOptions.Flush = 528
+Text.TextAlignmentOptions,Justified,Text.TextAlignmentOptions.Justified = 520
+Text.TextAlignmentOptions,Left,Text.TextAlignmentOptions.Left = 513
+Text.TextAlignmentOptions,Midline,Text.TextAlignmentOptions.Midline = 4098
+Text.TextAlignmentOptions,MidlineFlush,Text.TextAlignmentOptions.MidlineFlush = 4112
+Text.TextAlignmentOptions,MidlineGeoAligned,Text.TextAlignmentOptions.MidlineGeoAligned = 4128
+Text.TextAlignmentOptions,MidlineJustified,Text.TextAlignmentOptions.MidlineJustified = 4104
+Text.TextAlignmentOptions,MidlineLeft,Text.TextAlignmentOptions.MidlineLeft = 4097
+Text.TextAlignmentOptions,MidlineRight,Text.TextAlignmentOptions.MidlineRight = 4100
+Text.TextAlignmentOptions,Right,Text.TextAlignmentOptions.Right = 516
+Text.TextAlignmentOptions,Top,Text.TextAlignmentOptions.Top = 258
+Text.TextAlignmentOptions,TopFlush,Text.TextAlignmentOptions.TopFlush = 272
+Text.TextAlignmentOptions,TopGeoAligned,Text.TextAlignmentOptions.TopGeoAligned = 288
+Text.TextAlignmentOptions,TopJustified,Text.TextAlignmentOptions.TopJustified = 264
+Text.TextAlignmentOptions,TopLeft,Text.TextAlignmentOptions.TopLeft = 257
+Text.TextAlignmentOptions,TopRight,Text.TextAlignmentOptions.TopRight = 260
+Text.TextBase,.ctor,TextBase()
+Text.TextBase,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+Text.TextBase,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+Text.TextBase,ClearMesh,void ClearMesh() / void ClearMesh(bool)
+Text.TextBase,ComputeMarginSize,void ComputeMarginSize()
+Text.TextBase,CrossFadeAlpha,"void CrossFadeAlpha(float, float, bool)"
+Text.TextBase,CrossFadeColor,"void CrossFadeColor(Color, float, bool, bool) / void CrossFadeColor(Color, float, bool, bool, bool)"
+Text.TextBase,Cull,"void Cull(Rect, bool)"
+Text.TextBase,ForceMeshUpdate,"void ForceMeshUpdate(bool = False, bool = False)"
+Text.TextBase,GetModifiedMaterial,Material GetModifiedMaterial(Material)
+Text.TextBase,GetParsedText,string GetParsedText()
+Text.TextBase,GetPreferredValues,"Vector2 GetPreferredValues() / Vector2 GetPreferredValues(float, float) / Vector2 GetPreferredValues(string) / Vector2 GetPreferredValues(string, float, float)"
+Text.TextBase,GetRenderedValues,Vector2 GetRenderedValues() / Vector2 GetRenderedValues(bool)
+Text.TextBase,GetTextInfo,TextInfo GetTextInfo(string)
+Text.TextBase,GraphicUpdateComplete,void GraphicUpdateComplete()
+Text.TextBase,IsActive,bool IsActive()
+Text.TextBase,LayoutComplete,void LayoutComplete()
+Text.TextBase,OnCullingChanged,void OnCullingChanged()
+Text.TextBase,OnFontAssetRequest,"static event Func<int, string, FontAsset> OnFontAssetRequest"
+Text.TextBase,OnMissingCharacter,static event TextBase.MissingCharacterEventCallback OnMissingCharacter
+Text.TextBase,OnPreRenderText,event Action<TextInfo> OnPreRenderText
+Text.TextBase,OnRebuildRequested,void OnRebuildRequested()
+Text.TextBase,OnSpriteAssetRequest,"static event Func<int, string, SpriteAsset> OnSpriteAssetRequest"
+Text.TextBase,Raycast,"bool Raycast(Vector2, Camera)"
+Text.TextBase,Rebuild,void Rebuild(CanvasUpdate)
+Text.TextBase,RecalculateClipping,void RecalculateClipping()
+Text.TextBase,RecalculateMasking,void RecalculateMasking()
+Text.TextBase,SetAllDirty,void SetAllDirty()
+Text.TextBase,SetCharArray,"void SetCharArray(Char[]) / void SetCharArray(Char[], int, int)"
+Text.TextBase,SetClipRect,"void SetClipRect(Rect, bool)"
+Text.TextBase,SetClipSoftness,void SetClipSoftness(Vector2)
+Text.TextBase,SetLayoutDirty,void SetLayoutDirty()
+Text.TextBase,SetMaterialDirty,void SetMaterialDirty()
+Text.TextBase,SetNativeSize,void SetNativeSize()
+Text.TextBase,SetText,"void SetText(StringBuilder) / void SetText(string, bool = True) / void SetText(string, float, float = 0, float = 0, float = 0, float = 0, float = 0, float = 0, float = 0)"
+Text.TextBase,SetVertices,void SetVertices(Vector3[])
+Text.TextBase,SetVerticesDirty,void SetVerticesDirty()
+Text.TextBase,UpdateGeometry,"void UpdateGeometry(Mesh, int)"
+Text.TextBase,UpdateMeshPadding,void UpdateMeshPadding()
+Text.TextBase,UpdateVertexData,void UpdateVertexData() / void UpdateVertexData(VertexDataUpdateFlags)
+Text.TextBase,alignment,TextAlignmentOptions alignment { get; set; }
+Text.TextBase,alpha,float alpha { get; set; }
+Text.TextBase,autoSizeTextContainer,bool autoSizeTextContainer { get; set; }
+Text.TextBase,bounds,Bounds bounds { get; }
+Text.TextBase,characterHorizontalScale,float characterHorizontalScale { get; set; }
+Text.TextBase,characterSpacing,float characterSpacing { get; set; }
+Text.TextBase,characterWidthAdjustment,float characterWidthAdjustment { get; set; }
+Text.TextBase,colorGradient,VertexGradient colorGradient { get; set; }
+Text.TextBase,colorGradientPreset,TextColorGradient colorGradientPreset { get; set; }
+Text.TextBase,defaultMaterial,Material defaultMaterial { get; }
+Text.TextBase,emojiFallbackSupport,bool emojiFallbackSupport { get; set; }
+Text.TextBase,enableAutoSizing,bool enableAutoSizing { get; set; }
+Text.TextBase,enableCulling,bool enableCulling { get; set; }
+Text.TextBase,enableKerning,bool enableKerning { get; set; }
+Text.TextBase,enableVertexGradient,bool enableVertexGradient { get; set; }
+Text.TextBase,enableWordWrapping,bool enableWordWrapping { get; set; }
+Text.TextBase,extraPadding,bool extraPadding { get; set; }
+Text.TextBase,faceColor,Color32 faceColor { get; set; }
+Text.TextBase,firstOverflowCharacterIndex,int firstOverflowCharacterIndex { get; }
+Text.TextBase,firstVisibleCharacter,int firstVisibleCharacter { get; set; }
+Text.TextBase,flexibleHeight,float flexibleHeight { get; }
+Text.TextBase,flexibleWidth,float flexibleWidth { get; }
+Text.TextBase,font,FontAsset font { get; set; }
+Text.TextBase,fontFeatures,List<string> fontFeatures { get; set; }
+Text.TextBase,fontMaterial,Material fontMaterial { get; set; }
+Text.TextBase,fontMaterials,Material[] fontMaterials { get; }
+Text.TextBase,fontSharedMaterial,Material fontSharedMaterial { get; set; }
+Text.TextBase,fontSharedMaterials,Material[] fontSharedMaterials { get; }
+Text.TextBase,fontSize,float fontSize { get; set; }
+Text.TextBase,fontSizeMax,float fontSizeMax { get; set; }
+Text.TextBase,fontSizeMin,float fontSizeMin { get; set; }
+Text.TextBase,fontStyle,FontStyles fontStyle { get; set; }
+Text.TextBase,fontWeight,FontWeight fontWeight { get; set; }
+Text.TextBase,geometrySortingOrder,VertexSortingOrder geometrySortingOrder { get; set; }
+Text.TextBase,havePropertiesChanged,bool havePropertiesChanged { get; set; }
+Text.TextBase,horizontalAlignment,HorizontalAlignmentOptions horizontalAlignment { get; set; }
+Text.TextBase,horizontalMapping,TextureMappingOptions horizontalMapping { get; set; }
+Text.TextBase,ignoreVisibility,bool ignoreVisibility { get; set; }
+Text.TextBase,isOrthographic,bool isOrthographic { get; set; }
+Text.TextBase,isOverlay,bool isOverlay { get; set; }
+Text.TextBase,isRightToLeftText,bool isRightToLeftText { get; set; }
+Text.TextBase,isTextObjectScaleStatic,bool isTextObjectScaleStatic { get; set; }
+Text.TextBase,isTextOverflowing,bool isTextOverflowing { get; }
+Text.TextBase,isTextTruncated,bool isTextTruncated { get; }
+Text.TextBase,isUsingBold,bool isUsingBold { get; }
+Text.TextBase,isUsingLegacyAnimationComponent,bool isUsingLegacyAnimationComponent { get; set; }
+Text.TextBase,isVolumetricText,bool isVolumetricText { get; set; }
+Text.TextBase,layoutPriority,int layoutPriority { get; }
+Text.TextBase,lineSpacing,float lineSpacing { get; set; }
+Text.TextBase,lineSpacingAdjustment,float lineSpacingAdjustment { get; set; }
+Text.TextBase,linkedTextComponent,TextBase linkedTextComponent { get; set; }
+Text.TextBase,mainTexture,Texture mainTexture { get; }
+Text.TextBase,mappingUvLineOffset,float mappingUvLineOffset { get; set; }
+Text.TextBase,margin,Vector4 margin { get; set; }
+Text.TextBase,materialForRendering,Material materialForRendering { get; }
+Text.TextBase,maxHeight,float maxHeight { get; }
+Text.TextBase,maxVisibleCharacters,int maxVisibleCharacters { get; set; }
+Text.TextBase,maxVisibleLines,int maxVisibleLines { get; set; }
+Text.TextBase,maxVisibleWords,int maxVisibleWords { get; set; }
+Text.TextBase,maxWidth,float maxWidth { get; }
+Text.TextBase,mesh,Mesh mesh { get; }
+Text.TextBase,minHeight,float minHeight { get; }
+Text.TextBase,minWidth,float minWidth { get; }
+Text.TextBase,outlineColor,Color32 outlineColor { get; set; }
+Text.TextBase,outlineWidth,float outlineWidth { get; set; }
+Text.TextBase,overflowMode,TextOverflowModes overflowMode { get; set; }
+Text.TextBase,overrideColorTags,bool overrideColorTags { get; set; }
+Text.TextBase,pageToDisplay,int pageToDisplay { get; set; }
+Text.TextBase,paragraphSpacing,float paragraphSpacing { get; set; }
+Text.TextBase,parseCtrlCharacters,bool parseCtrlCharacters { get; set; }
+Text.TextBase,pixelsPerUnit,float pixelsPerUnit { get; }
+Text.TextBase,preferredHeight,float preferredHeight { get; }
+Text.TextBase,preferredWidth,float preferredWidth { get; }
+Text.TextBase,renderMode,TextRenderFlags renderMode { get; set; }
+Text.TextBase,renderedHeight,float renderedHeight { get; }
+Text.TextBase,renderedWidth,float renderedWidth { get; }
+Text.TextBase,richText,bool richText { get; set; }
+Text.TextBase,spriteAsset,SpriteAsset spriteAsset { get; set; }
+Text.TextBase,styleSheet,TextStyleSheet styleSheet { get; set; }
+Text.TextBase,text,string text { get; set; }
+Text.TextBase,textBounds,Bounds textBounds { get; }
+Text.TextBase,textInfo,TextInfo textInfo { get; }
+Text.TextBase,textPreprocessor,ITextPreprocessor textPreprocessor { get; set; }
+Text.TextBase,textStyle,TextStyle textStyle { get; set; }
+Text.TextBase,textWrappingMode,TextWrappingModes textWrappingMode { get; set; }
+Text.TextBase,tintAllSprites,bool tintAllSprites { get; set; }
+Text.TextBase,useMaxVisibleDescender,bool useMaxVisibleDescender { get; set; }
+Text.TextBase,vertexBufferAutoSizeReduction,bool vertexBufferAutoSizeReduction { get; set; }
+Text.TextBase,verticalAlignment,VerticalAlignmentOptions verticalAlignment { get; set; }
+Text.TextBase,verticalMapping,TextureMappingOptions verticalMapping { get; set; }
+Text.TextBase,wordSpacing,float wordSpacing { get; set; }
+Text.TextBase,wordWrappingRatios,float wordWrappingRatios { get; set; }
+Text.TextBase.CharacterSubstitution,.ctor,"CharacterSubstitution(int, uint)"
+Text.TextBase.CharacterSubstitution,index,int index
+Text.TextBase.CharacterSubstitution,unicode,uint unicode
+Text.TextBase.MissingCharacterEventCallback,delegate,"void (int, int, string, FontAsset, TextBase)"
+Text.TextBase.SpecialCharacter,.ctor,"SpecialCharacter(Character, int)"
+Text.TextBase.SpecialCharacter,character,Character character
+Text.TextBase.SpecialCharacter,fontAsset,FontAsset fontAsset
+Text.TextBase.SpecialCharacter,material,Material material
+Text.TextBase.SpecialCharacter,materialIndex,int materialIndex
+Text.TextColorGradient,.ctor,TextColorGradient()
+Text.TextColorGradient,CreateInstance,"static TextColorGradient CreateInstance(Color) / static TextColorGradient CreateInstance(Color, Color, Color, Color)"
+Text.TextColorGradient,bottomLeft,Color bottomLeft { get; set; }
+Text.TextColorGradient,bottomRight,Color bottomRight { get; set; }
+Text.TextColorGradient,colorMode,ColorMode colorMode { get; set; }
+Text.TextColorGradient,topLeft,Color topLeft { get; set; }
+Text.TextColorGradient,topRight,Color topRight { get; set; }
+Text.TextContainer,.ctor,TextContainer()
+Text.TextContainer,anchorPosition,Vector2 anchorPosition { get; }
+Text.TextContainer,height,float height { get; }
+Text.TextContainer,isAutoFitting,bool isAutoFitting { get; set; }
+Text.TextContainer,isDefaultHeight,bool isDefaultHeight { get; }
+Text.TextContainer,isDefaultWidth,bool isDefaultWidth { get; }
+Text.TextContainer,margins,Vector4 margins { get; set; }
+Text.TextContainer,rect,Rect rect { get; }
+Text.TextContainer,size,Vector2 size { get; }
+Text.TextContainer,width,float width { get; }
+Text.TextEventManager,COLOR_GRADIENT_PROPERTY_EVENT,static FastAction<Object> COLOR_GRADIENT_PROPERTY_EVENT
+Text.TextEventManager,DRAG_AND_DROP_MATERIAL_EVENT,"static FastAction<GameObject, Material, Material> DRAG_AND_DROP_MATERIAL_EVENT"
+Text.TextEventManager,FONT_PROPERTY_EVENT,"static FastAction<bool, Object> FONT_PROPERTY_EVENT"
+Text.TextEventManager,MATERIAL_PROPERTY_EVENT,"static FastAction<bool, Material> MATERIAL_PROPERTY_EVENT"
+Text.TextEventManager,ON_COLOR_GRADIENT_PROPERTY_CHANGED,static void ON_COLOR_GRADIENT_PROPERTY_CHANGED(Object)
+Text.TextEventManager,ON_DRAG_AND_DROP_MATERIAL_CHANGED,"static void ON_DRAG_AND_DROP_MATERIAL_CHANGED(GameObject, Material, Material)"
+Text.TextEventManager,ON_FONT_PROPERTY_CHANGED,"static void ON_FONT_PROPERTY_CHANGED(bool, Object)"
+Text.TextEventManager,ON_MATERIAL_PROPERTY_CHANGED,"static void ON_MATERIAL_PROPERTY_CHANGED(bool, Material)"
+Text.TextEventManager,ON_RESOURCES_LOADED,static void ON_RESOURCES_LOADED()
+Text.TextEventManager,ON_SPRITE_ASSET_PROPERTY_CHANGED,"static void ON_SPRITE_ASSET_PROPERTY_CHANGED(bool, Object)"
+Text.TextEventManager,ON_TEXTMESHPRO_PROPERTY_CHANGED,"static void ON_TEXTMESHPRO_PROPERTY_CHANGED(bool, Object)"
+Text.TextEventManager,ON_TEXTMESHPRO_UGUI_PROPERTY_CHANGED,"static void ON_TEXTMESHPRO_UGUI_PROPERTY_CHANGED(bool, Object)"
+Text.TextEventManager,ON_TEXT_CHANGED,static void ON_TEXT_CHANGED(Object)
+Text.TextEventManager,ON_TEXT_STYLE_PROPERTY_CHANGED,static void ON_TEXT_STYLE_PROPERTY_CHANGED(bool)
+Text.TextEventManager,ON_TMP_SETTINGS_CHANGED,static void ON_TMP_SETTINGS_CHANGED()
+Text.TextEventManager,RESOURCE_LOAD_EVENT,static FastAction RESOURCE_LOAD_EVENT
+Text.TextEventManager,SPRITE_ASSET_PROPERTY_EVENT,"static FastAction<bool, Object> SPRITE_ASSET_PROPERTY_EVENT"
+Text.TextEventManager,TEXTMESHPRO_PROPERTY_EVENT,"static FastAction<bool, Object> TEXTMESHPRO_PROPERTY_EVENT"
+Text.TextEventManager,TEXTMESHPRO_UGUI_PROPERTY_EVENT,"static FastAction<bool, Object> TEXTMESHPRO_UGUI_PROPERTY_EVENT"
+Text.TextEventManager,TEXT_CHANGED_EVENT,static FastAction<Object> TEXT_CHANGED_EVENT
+Text.TextEventManager,TEXT_STYLE_PROPERTY_EVENT,static FastAction<bool> TEXT_STYLE_PROPERTY_EVENT
+Text.TextEventManager,TMP_SETTINGS_PROPERTY_EVENT,static FastAction TMP_SETTINGS_PROPERTY_EVENT
+Text.TextExtensionMethods,ArrayToString,static string ArrayToString(Char[])
+Text.TextExtensionMethods,Compare,"static bool Compare(Color32, Color32) / static bool Compare(Color, Color) / static bool Compare(Vector3, Vector3, int) / static bool Compare(Quaternion, Quaternion, int)"
+Text.TextExtensionMethods,CompareRGB,"static bool CompareRGB(Color32, Color32) / static bool CompareRGB(Color, Color)"
+Text.TextExtensionMethods,FindInstanceID,"static int FindInstanceID<T>(List<T>, T)"
+Text.TextExtensionMethods,IntToString,"static string IntToString(int[]) / static string IntToString(int[], int, int)"
+Text.TextExtensionMethods,Multiply,"static Color32 Multiply(Color32, Color32)"
+Text.TextExtensionMethods,Tint,"static Color32 Tint(Color32, Color32) / static Color32 Tint(Color32, float)"
+Text.TextInfo,.ctor,TextInfo(TextBase) / TextInfo()
+Text.TextInfo,ClearAllMeshInfo,void ClearAllMeshInfo()
+Text.TextInfo,ClearMeshInfo,void ClearMeshInfo(bool)
+Text.TextInfo,ClearUnusedVertices,void ClearUnusedVertices(MaterialReference[])
+Text.TextInfo,CopyMeshInfoVertexData,MeshInfo[] CopyMeshInfoVertexData()
+Text.TextInfo,ResetVertexLayout,void ResetVertexLayout(bool)
+Text.TextInfo,Resize,"static void Resize<T>(ref T[], int) / static void Resize<T>(ref T[], int, bool)"
+Text.TextInfo,characterCount,int characterCount { get; set; }
+Text.TextInfo,characterInfo,CharacterInfo[] characterInfo
+Text.TextInfo,lineCount,int lineCount { get; set; }
+Text.TextInfo,lineInfo,LineInfo[] lineInfo
+Text.TextInfo,linkCount,int linkCount { get; set; }
+Text.TextInfo,linkInfo,LinkInfo[] linkInfo
+Text.TextInfo,materialCount,int materialCount { get; set; }
+Text.TextInfo,meshInfo,MeshInfo[] meshInfo
+Text.TextInfo,operators,"Equality(TextInfo, TextInfo) / Inequality(TextInfo, TextInfo) / Implicit(TextInfo)"
+Text.TextInfo,pageCount,int pageCount { get; set; }
+Text.TextInfo,pageInfo,PageInfo[] pageInfo
+Text.TextInfo,spaceCount,int spaceCount { get; set; }
+Text.TextInfo,spriteCount,int spriteCount { get; set; }
+Text.TextInfo,textComponent,TextBase textComponent
+Text.TextInfo,wordCount,int wordCount { get; set; }
+Text.TextInfo,wordInfo,WordInfo[] wordInfo
+Text.TextOverflowModes,Ellipsis,Text.TextOverflowModes.Ellipsis = 1
+Text.TextOverflowModes,Linked,Text.TextOverflowModes.Linked = 6
+Text.TextOverflowModes,Masking,Text.TextOverflowModes.Masking = 2
+Text.TextOverflowModes,Overflow,Text.TextOverflowModes.Overflow = 0
+Text.TextOverflowModes,Page,Text.TextOverflowModes.Page = 5
+Text.TextOverflowModes,ScrollRect,Text.TextOverflowModes.ScrollRect = 4
+Text.TextOverflowModes,Truncate,Text.TextOverflowModes.Truncate = 3
+Text.TextParsingUtilities,.ctor,TextParsingUtilities()
+Text.TextParsingUtilities,ConvertToUTF32,"static uint ConvertToUTF32(uint, uint)"
+Text.TextParsingUtilities,GetHashCodeCaseSensitive,static uint GetHashCodeCaseSensitive(string)
+Text.TextParsingUtilities,IsHighSurrogate,static bool IsHighSurrogate(uint)
+Text.TextParsingUtilities,IsLowSurrogate,static bool IsLowSurrogate(uint)
+Text.TextParsingUtilities,ToLowerASCIIFast,static Char ToLowerASCIIFast(Char) / static uint ToLowerASCIIFast(uint)
+Text.TextParsingUtilities,ToUpperASCIIFast,static Char ToUpperASCIIFast(Char) / static uint ToUpperASCIIFast(uint)
+Text.TextParsingUtilities,ToUpperFast,static uint ToUpperFast(uint)
+Text.TextParsingUtilities,instance,static TextParsingUtilities instance { get; }
+Text.TextRenderFlags,DontRender,Text.TextRenderFlags.DontRender = 0
+Text.TextRenderFlags,Render,Text.TextRenderFlags.Render = 255
+Text.TextSettings,.ctor,TextSettings()
+Text.TextSettings,GetFontAsset,static FontAsset GetFontAsset()
+Text.TextSettings,GetSettings,static TextSettings GetSettings()
+Text.TextSettings,GetSpriteAsset,static SpriteAsset GetSpriteAsset()
+Text.TextSettings,GetStyleSheet,static TextStyleSheet GetStyleSheet()
+Text.TextSettings,LoadDefaultSettings,static TextSettings LoadDefaultSettings()
+Text.TextSettings,LoadLinebreakingRules,static void LoadLinebreakingRules()
+Text.TextSettings,autoSizeTextContainer,static bool autoSizeTextContainer { get; set; }
+Text.TextSettings,clearDynamicDataOnBuild,static bool clearDynamicDataOnBuild { get; set; }
+Text.TextSettings,defaultColorGradientPresetsPath,static string defaultColorGradientPresetsPath { get; set; }
+Text.TextSettings,defaultFontAsset,static FontAsset defaultFontAsset { get; set; }
+Text.TextSettings,defaultFontAssetPath,static string defaultFontAssetPath { get; set; }
+Text.TextSettings,defaultFontSize,static float defaultFontSize { get; set; }
+Text.TextSettings,defaultSpriteAsset,static SpriteAsset defaultSpriteAsset { get; set; }
+Text.TextSettings,defaultSpriteAssetPath,static string defaultSpriteAssetPath { get; set; }
+Text.TextSettings,defaultStyleSheet,static TextStyleSheet defaultStyleSheet { get; set; }
+Text.TextSettings,defaultTextAutoSizingMaxRatio,static float defaultTextAutoSizingMaxRatio { get; set; }
+Text.TextSettings,defaultTextAutoSizingMinRatio,static float defaultTextAutoSizingMinRatio { get; set; }
+Text.TextSettings,defaultTextMeshProTextContainerSize,static Vector2 defaultTextMeshProTextContainerSize { get; set; }
+Text.TextSettings,defaultTextMeshProUITextContainerSize,static Vector2 defaultTextMeshProUITextContainerSize { get; set; }
+Text.TextSettings,emojiFallbackTextAssets,static List<Object> emojiFallbackTextAssets { get; set; }
+Text.TextSettings,enableEmojiSupport,static bool enableEmojiSupport { get; set; }
+Text.TextSettings,enableExtraPadding,static bool enableExtraPadding { get; set; }
+Text.TextSettings,enableKerning,static bool enableKerning { get; set; }
+Text.TextSettings,enableParseEscapeCharacters,static bool enableParseEscapeCharacters { get; set; }
+Text.TextSettings,enableRaycastTarget,static bool enableRaycastTarget { get; set; }
+Text.TextSettings,enableTintAllSprites,static bool enableTintAllSprites { get; set; }
+Text.TextSettings,fallbackFontAssets,static List<FontAsset> fallbackFontAssets { get; set; }
+Text.TextSettings,followingCharacters,"static Dictionary<int, Char> followingCharacters { get; }"
+Text.TextSettings,fontFeatures,static List<string> fontFeatures { get; set; }
+Text.TextSettings,getFontFeaturesAtRuntime,static bool getFontFeaturesAtRuntime { get; set; }
+Text.TextSettings,hideSubTextObjects,static bool hideSubTextObjects { get; set; }
+Text.TextSettings,instance,static TextSettings instance { get; }
+Text.TextSettings,isTextObjectScaleStatic,static bool isTextObjectScaleStatic { get; set; }
+Text.TextSettings,leadingCharacters,"static Dictionary<int, Char> leadingCharacters { get; }"
+Text.TextSettings,linebreakingRules,static TextSettings.LineBreakingTable linebreakingRules { get; }
+Text.TextSettings,matchMaterialPreset,static bool matchMaterialPreset { get; set; }
+Text.TextSettings,missingCharacterSpriteUnicode,static int missingCharacterSpriteUnicode { get; set; }
+Text.TextSettings,missingGlyphCharacter,static int missingGlyphCharacter { get; set; }
+Text.TextSettings,styleSheetsResourcePath,static string styleSheetsResourcePath { get; set; }
+Text.TextSettings,textWrappingMode,static TextWrappingModes textWrappingMode { get; set; }
+Text.TextSettings,useModernHangulLineBreakingRules,static bool useModernHangulLineBreakingRules { get; set; }
+Text.TextSettings,version,static string version { get; }
+Text.TextSettings,warningsDisabled,static bool warningsDisabled { get; set; }
+Text.TextSettings.LineBreakingTable,.ctor,LineBreakingTable()
+Text.TextSettings.LineBreakingTable,followingCharacters,"Dictionary<int, Char> followingCharacters"
+Text.TextSettings.LineBreakingTable,leadingCharacters,"Dictionary<int, Char> leadingCharacters"
+Text.TextStyle,NormalStyle,static TextStyle NormalStyle { get; }
+Text.TextStyle,RefreshStyle,void RefreshStyle()
+Text.TextStyle,hashCode,int hashCode { get; }
+Text.TextStyle,name,string name { get; set; }
+Text.TextStyle,styleClosingDefinition,string styleClosingDefinition { get; }
+Text.TextStyle,styleClosingTagArray,uint[] styleClosingTagArray { get; }
+Text.TextStyle,styleOpeningDefinition,string styleOpeningDefinition { get; }
+Text.TextStyle,styleOpeningTagArray,uint[] styleOpeningTagArray { get; }
+Text.TextStyleSheet,.ctor,TextStyleSheet()
+Text.TextStyleSheet,AddStyle,"void AddStyle(string, string, string)"
+Text.TextStyleSheet,GetStyle,TextStyle GetStyle(int) / TextStyle GetStyle(string)
+Text.TextStyleSheet,RefreshStyles,void RefreshStyles()
+Text.TextStyleSheet,styles,List<TextStyle> styles { get; }
+Text.TextSubMesh,.ctor,TextSubMesh()
+Text.TextSubMesh,fallbackMaterial,Material fallbackMaterial { get; set; }
+Text.TextSubMesh,fallbackSourceMaterial,Material fallbackSourceMaterial { get; set; }
+Text.TextSubMesh,fontAsset,FontAsset fontAsset { get; set; }
+Text.TextSubMesh,isDefaultMaterial,bool isDefaultMaterial { get; set; }
+Text.TextSubMesh,mainTexture,Texture mainTexture { get; }
+Text.TextSubMesh,material,Material material { get; set; }
+Text.TextSubMesh,mesh,Mesh mesh { get; }
+Text.TextSubMesh,meshFilter,MeshFilter meshFilter { get; }
+Text.TextSubMesh,padding,float padding { get; set; }
+Text.TextSubMesh,renderer,Renderer renderer { get; }
+Text.TextSubMesh,sharedMaterial,Material sharedMaterial { get; set; }
+Text.TextSubMesh,textComponent,WorldText textComponent { get; }
+Text.TextUtilities,DistanceToLine,"static float DistanceToLine(Vector3, Vector3, Vector3)"
+Text.TextUtilities,FindIntersectingCharacter,"static int FindIntersectingCharacter(TextBase, Vector3, Camera, bool)"
+Text.TextUtilities,FindIntersectingLine,"static int FindIntersectingLine(TextBase, Vector3, Camera)"
+Text.TextUtilities,FindIntersectingLink,"static int FindIntersectingLink(TextBase, Vector3, Camera)"
+Text.TextUtilities,FindIntersectingWord,"static int FindIntersectingWord(TextBase, Vector3, Camera)"
+Text.TextUtilities,FindNearestCharacter,"static int FindNearestCharacter(TextBase, Vector3, Camera, bool)"
+Text.TextUtilities,FindNearestCharacterOnLine,"static int FindNearestCharacterOnLine(TextBase, Vector3, int, Camera, bool)"
+Text.TextUtilities,FindNearestLine,"static int FindNearestLine(TextBase, Vector3, Camera)"
+Text.TextUtilities,FindNearestLink,"static int FindNearestLink(TextBase, Vector3, Camera)"
+Text.TextUtilities,FindNearestWord,"static int FindNearestWord(TextBase, Vector3, Camera)"
+Text.TextUtilities,GetCursorIndexFromPosition,"static int GetCursorIndexFromPosition(TextBase, Vector3, Camera) / static int GetCursorIndexFromPosition(TextBase, Vector3, Camera, out CaretPosition)"
+Text.TextUtilities,GetHashCodeCaseInSensitive,static uint GetHashCodeCaseInSensitive(string)
+Text.TextUtilities,GetSimpleHashCode,static int GetSimpleHashCode(string)
+Text.TextUtilities,GetSimpleHashCodeLowercase,static uint GetSimpleHashCodeLowercase(string)
+Text.TextUtilities,HexToInt,static int HexToInt(Char)
+Text.TextUtilities,IsIntersectingRectTransform,"static bool IsIntersectingRectTransform(RectTransform, Vector3, Camera)"
+Text.TextUtilities,ScreenPointToWorldPointInRectangle,"static bool ScreenPointToWorldPointInRectangle(Transform, Vector2, Camera, out Vector3)"
+Text.TextUtilities,StringHexToInt,static int StringHexToInt(string)
+Text.TextUtilities,ToLowerFast,static Char ToLowerFast(Char)
+Text.TextUtilities,ToUpperFast,static Char ToUpperFast(Char)
+Text.TextWrappingModes,NoWrap,Text.TextWrappingModes.NoWrap = 0
+Text.TextWrappingModes,Normal,Text.TextWrappingModes.Normal = 1
+Text.TextWrappingModes,PreserveWhitespace,Text.TextWrappingModes.PreserveWhitespace = 2
+Text.TextWrappingModes,PreserveWhitespaceNoWrap,Text.TextWrappingModes.PreserveWhitespaceNoWrap = 3
+Text.TextureMappingOptions,Character,Text.TextureMappingOptions.Character = 0
+Text.TextureMappingOptions,Line,Text.TextureMappingOptions.Line = 1
+Text.TextureMappingOptions,MatchAspect,Text.TextureMappingOptions.MatchAspect = 3
+Text.TextureMappingOptions,Paragraph,Text.TextureMappingOptions.Paragraph = 2
+Text.UpdateManager,.ctor,UpdateManager()
+Text.UpdateManager,RegisterTextElementForCullingUpdate,static void RegisterTextElementForCullingUpdate(TextBase)
+Text.UpdateManager,RegisterTextElementForGraphicRebuild,static void RegisterTextElementForGraphicRebuild(TextBase)
+Text.UpdateManager,RegisterTextElementForLayoutRebuild,static void RegisterTextElementForLayoutRebuild(TextBase)
+Text.UpdateManager,RegisterTextObjectForUpdate,static void RegisterTextObjectForUpdate(TextBase)
+Text.UpdateManager,UnRegisterTextElementForRebuild,static void UnRegisterTextElementForRebuild(TextBase)
+Text.UpdateManager,UnRegisterTextObjectForUpdate,static void UnRegisterTextObjectForUpdate(TextBase)
+Text.UpdateRegistry,.ctor,UpdateRegistry()
+Text.UpdateRegistry,RegisterCanvasElementForGraphicRebuild,static bool RegisterCanvasElementForGraphicRebuild(ICanvasElement)
+Text.UpdateRegistry,RegisterCanvasElementForLayoutRebuild,static bool RegisterCanvasElementForLayoutRebuild(ICanvasElement)
+Text.UpdateRegistry,UnRegisterCanvasElementForRebuild,static void UnRegisterCanvasElementForRebuild(ICanvasElement)
+Text.Vertex,color,Color32 color
+Text.Vertex,position,Vector3 position
+Text.Vertex,uv,Vector4 uv
+Text.Vertex,uv2,Vector2 uv2
+Text.Vertex,zero,static Vertex zero { get; }
+Text.VertexDataUpdateFlags,All,Text.VertexDataUpdateFlags.All = 255
+Text.VertexDataUpdateFlags,Colors32,Text.VertexDataUpdateFlags.Colors32 = 16
+Text.VertexDataUpdateFlags,None,Text.VertexDataUpdateFlags.None = 0
+Text.VertexDataUpdateFlags,Uv0,Text.VertexDataUpdateFlags.Uv0 = 2
+Text.VertexDataUpdateFlags,Uv2,Text.VertexDataUpdateFlags.Uv2 = 4
+Text.VertexDataUpdateFlags,Uv4,Text.VertexDataUpdateFlags.Uv4 = 8
+Text.VertexDataUpdateFlags,Vertices,Text.VertexDataUpdateFlags.Vertices = 1
+Text.VertexGradient,.ctor,"VertexGradient(Color) / VertexGradient(Color, Color, Color, Color)"
+Text.VertexGradient,bottomLeft,Color bottomLeft
+Text.VertexGradient,bottomRight,Color bottomRight
+Text.VertexGradient,topLeft,Color topLeft
+Text.VertexGradient,topRight,Color topRight
+Text.VertexSortingOrder,Normal,Text.VertexSortingOrder.Normal = 0
+Text.VertexSortingOrder,Reverse,Text.VertexSortingOrder.Reverse = 1
+Text.VerticalAlignmentOptions,Baseline,Text.VerticalAlignmentOptions.Baseline = 2048
+Text.VerticalAlignmentOptions,Bottom,Text.VerticalAlignmentOptions.Bottom = 1024
+Text.VerticalAlignmentOptions,Capline,Text.VerticalAlignmentOptions.Capline = 8192
+Text.VerticalAlignmentOptions,Geometry,Text.VerticalAlignmentOptions.Geometry = 4096
+Text.VerticalAlignmentOptions,Middle,Text.VerticalAlignmentOptions.Middle = 512
+Text.VerticalAlignmentOptions,Top,Text.VerticalAlignmentOptions.Top = 256
+Text.WordInfo,GetWord,string GetWord()
+Text.WordInfo,characterCount,int characterCount
+Text.WordInfo,firstCharacterIndex,int firstCharacterIndex
+Text.WordInfo,lastCharacterIndex,int lastCharacterIndex
+Text.WordInfo,textComponent,TextBase textComponent
+Text.WorldText,.ctor,WorldText()
+Text.WorldText,CalculateLayoutInputHorizontal,void CalculateLayoutInputHorizontal()
+Text.WorldText,CalculateLayoutInputVertical,void CalculateLayoutInputVertical()
+Text.WorldText,ClearMesh,void ClearMesh() / void ClearMesh(bool)
+Text.WorldText,ComputeMarginSize,void ComputeMarginSize()
+Text.WorldText,CrossFadeAlpha,"void CrossFadeAlpha(float, float, bool)"
+Text.WorldText,CrossFadeColor,"void CrossFadeColor(Color, float, bool, bool) / void CrossFadeColor(Color, float, bool, bool, bool)"
+Text.WorldText,Cull,"void Cull(Rect, bool)"
+Text.WorldText,ForceMeshUpdate,"void ForceMeshUpdate(bool = False, bool = False)"
+Text.WorldText,GetModifiedMaterial,Material GetModifiedMaterial(Material)
+Text.WorldText,GetParsedText,string GetParsedText()
+Text.WorldText,GraphicUpdateComplete,void GraphicUpdateComplete()
+Text.WorldText,IsActive,bool IsActive()
+Text.WorldText,LayoutComplete,void LayoutComplete()
+Text.WorldText,OnCullingChanged,void OnCullingChanged()
+Text.WorldText,OnRebuildRequested,void OnRebuildRequested()
+Text.WorldText,Raycast,"bool Raycast(Vector2, Camera)"
+Text.WorldText,Rebuild,void Rebuild(CanvasUpdate)
+Text.WorldText,RecalculateClipping,void RecalculateClipping()
+Text.WorldText,RecalculateMasking,void RecalculateMasking()
+Text.WorldText,SetAllDirty,void SetAllDirty()
+Text.WorldText,SetClipRect,"void SetClipRect(Rect, bool)"
+Text.WorldText,SetClipSoftness,void SetClipSoftness(Vector2)
+Text.WorldText,SetLayoutDirty,void SetLayoutDirty()
+Text.WorldText,SetMask,"void SetMask(MaskingTypes, Vector4) / void SetMask(MaskingTypes, Vector4, float, float)"
+Text.WorldText,SetMaterialDirty,void SetMaterialDirty()
+Text.WorldText,SetNativeSize,void SetNativeSize()
+Text.WorldText,SetVertices,void SetVertices(Vector3[])
+Text.WorldText,SetVerticesDirty,void SetVerticesDirty()
+Text.WorldText,UpdateGeometry,"void UpdateGeometry(Mesh, int)"
+Text.WorldText,UpdateMeshPadding,void UpdateMeshPadding()
+Text.WorldText,defaultMaterial,Material defaultMaterial { get; }
+Text.WorldText,flexibleHeight,float flexibleHeight { get; }
+Text.WorldText,flexibleWidth,float flexibleWidth { get; }
+Text.WorldText,layoutPriority,int layoutPriority { get; }
+Text.WorldText,mainTexture,Texture mainTexture { get; }
+Text.WorldText,maskType,MaskingTypes maskType { get; set; }
+Text.WorldText,materialForRendering,Material materialForRendering { get; }
+Text.WorldText,mesh,Mesh mesh { get; }
+Text.WorldText,meshFilter,MeshFilter meshFilter { get; }
+Text.WorldText,minHeight,float minHeight { get; }
+Text.WorldText,minWidth,float minWidth { get; }
+Text.WorldText,preferredHeight,float preferredHeight { get; }
+Text.WorldText,preferredWidth,float preferredWidth { get; }
+Text.WorldText,renderedHeight,float renderedHeight { get; }
+Text.WorldText,renderedWidth,float renderedWidth { get; }
+Text.WorldText,renderer,Renderer renderer { get; }
+Text.WorldText,sortingLayerID,int sortingLayerID { get; set; }
+Text.WorldText,sortingOrder,int sortingOrder { get; set; }
+UIEvents.AbstractEventData,Reset,void Reset()
+UIEvents.AbstractEventData,Use,void Use()
+UIEvents.AbstractEventData,operators,"Equality(AbstractEventData, AbstractEventData) / Inequality(AbstractEventData, AbstractEventData) / Implicit(AbstractEventData)"
+UIEvents.AbstractEventData,used,bool used { get; }
+UIEvents.AxisEventData,.ctor,AxisEventData(EventSystem)
+UIEvents.AxisEventData,Reset,void Reset()
+UIEvents.AxisEventData,Use,void Use()
+UIEvents.AxisEventData,moveDir,MoveDirection moveDir { get; set; }
+UIEvents.AxisEventData,moveVector,Vector2 moveVector { get; set; }
+UIEvents.AxisEventData,used,bool used { get; }
+UIEvents.BaseEventData,.ctor,BaseEventData(EventSystem)
+UIEvents.BaseEventData,Reset,void Reset()
+UIEvents.BaseEventData,Use,void Use()
+UIEvents.BaseEventData,currentInputModule,InputModule currentInputModule { get; }
+UIEvents.BaseEventData,selectedObject,GameObject selectedObject { get; set; }
+UIEvents.BaseEventData,used,bool used { get; }
+UIEvents.BaseInput,.ctor,BaseInput()
+UIEvents.BaseInput,GetAxisRaw,float GetAxisRaw(string)
+UIEvents.BaseInput,GetButtonDown,bool GetButtonDown(string)
+UIEvents.BaseInput,GetMouseButton,bool GetMouseButton(int)
+UIEvents.BaseInput,GetMouseButtonDown,bool GetMouseButtonDown(int)
+UIEvents.BaseInput,GetMouseButtonUp,bool GetMouseButtonUp(int)
+UIEvents.BaseInput,GetTouch,Touch GetTouch(int)
+UIEvents.BaseInput,IsActive,bool IsActive()
+UIEvents.BaseInput,compositionCursorPos,Vector2 compositionCursorPos { get; set; }
+UIEvents.BaseInput,compositionString,string compositionString { get; }
+UIEvents.BaseInput,imeCompositionMode,IMECompositionMode imeCompositionMode { get; set; }
+UIEvents.BaseInput,mousePosition,Vector2 mousePosition { get; }
+UIEvents.BaseInput,mousePresent,bool mousePresent { get; }
+UIEvents.BaseInput,mouseScrollDelta,Vector2 mouseScrollDelta { get; }
+UIEvents.BaseInput,mouseScrollDeltaPerTick,float mouseScrollDeltaPerTick { get; }
+UIEvents.BaseInput,touchCount,int touchCount { get; }
+UIEvents.BaseInput,touchSupported,bool touchSupported { get; }
+UIEvents.BaseRaycaster,.ctor,BaseRaycaster()
+UIEvents.BaseRaycaster,IsActive,bool IsActive()
+UIEvents.BaseRaycaster,Raycast,"void Raycast(PointerEventData, List<RaycastResult>)"
+UIEvents.BaseRaycaster,ToString,string ToString()
+UIEvents.BaseRaycaster,eventCamera,Camera eventCamera { get; }
+UIEvents.BaseRaycaster,priority,int priority { get; }
+UIEvents.BaseRaycaster,renderOrderPriority,int renderOrderPriority { get; }
+UIEvents.BaseRaycaster,rootRaycaster,BaseRaycaster rootRaycaster { get; }
+UIEvents.BaseRaycaster,sortOrderPriority,int sortOrderPriority { get; }
+UIEvents.EventHandle,Unused,UIEvents.EventHandle.Unused = 0
+UIEvents.EventHandle,Used,UIEvents.EventHandle.Used = 1
+UIEvents.EventKind,BeginDrag,UIEvents.EventKind.BeginDrag = 7
+UIEvents.EventKind,Cancel,UIEvents.EventKind.Cancel = 17
+UIEvents.EventKind,Count,UIEvents.EventKind.Count = 18
+UIEvents.EventKind,Deselect,UIEvents.EventKind.Deselect = 14
+UIEvents.EventKind,Drag,UIEvents.EventKind.Drag = 8
+UIEvents.EventKind,Drop,UIEvents.EventKind.Drop = 10
+UIEvents.EventKind,EndDrag,UIEvents.EventKind.EndDrag = 9
+UIEvents.EventKind,InitializePotentialDrag,UIEvents.EventKind.InitializePotentialDrag = 6
+UIEvents.EventKind,Move,UIEvents.EventKind.Move = 15
+UIEvents.EventKind,PointerClick,UIEvents.EventKind.PointerClick = 5
+UIEvents.EventKind,PointerDown,UIEvents.EventKind.PointerDown = 3
+UIEvents.EventKind,PointerEnter,UIEvents.EventKind.PointerEnter = 0
+UIEvents.EventKind,PointerExit,UIEvents.EventKind.PointerExit = 1
+UIEvents.EventKind,PointerMove,UIEvents.EventKind.PointerMove = 2
+UIEvents.EventKind,PointerUp,UIEvents.EventKind.PointerUp = 4
+UIEvents.EventKind,Scroll,UIEvents.EventKind.Scroll = 11
+UIEvents.EventKind,Select,UIEvents.EventKind.Select = 13
+UIEvents.EventKind,Submit,UIEvents.EventKind.Submit = 16
+UIEvents.EventKind,UpdateSelected,UIEvents.EventKind.UpdateSelected = 12
+UIEvents.EventSystem,.ctor,EventSystem()
+UIEvents.EventSystem,IsActive,bool IsActive()
+UIEvents.EventSystem,IsPointerOverGameObject,bool IsPointerOverGameObject() / bool IsPointerOverGameObject(int)
+UIEvents.EventSystem,RaycastAll,"void RaycastAll(PointerEventData, List<RaycastResult>)"
+UIEvents.EventSystem,SetSelectedGameObject,"void SetSelectedGameObject(GameObject, BaseEventData) / void SetSelectedGameObject(GameObject)"
+UIEvents.EventSystem,SetUITookitEventSystemOverride,"static void SetUITookitEventSystemOverride(EventSystem, bool = True, bool = True)"
+UIEvents.EventSystem,ToString,string ToString()
+UIEvents.EventSystem,UpdateModules,void UpdateModules()
+UIEvents.EventSystem,alreadySelecting,bool alreadySelecting { get; }
+UIEvents.EventSystem,current,static EventSystem current { get; set; }
+UIEvents.EventSystem,currentInputModule,InputModule currentInputModule { get; }
+UIEvents.EventSystem,currentSelectedGameObject,GameObject currentSelectedGameObject { get; }
+UIEvents.EventSystem,firstSelectedGameObject,GameObject firstSelectedGameObject { get; set; }
+UIEvents.EventSystem,isFocused,bool isFocused { get; }
+UIEvents.EventSystem,lastSelectedGameObject,GameObject lastSelectedGameObject { get; }
+UIEvents.EventSystem,pixelDragThreshold,int pixelDragThreshold { get; set; }
+UIEvents.EventSystem,sendNavigationEvents,bool sendNavigationEvents { get; set; }
+UIEvents.EventTrigger,.ctor,EventTrigger()
+UIEvents.EventTrigger,IsActive,bool IsActive()
+UIEvents.EventTrigger,OnBeginDrag,void OnBeginDrag(PointerEventData)
+UIEvents.EventTrigger,OnCancel,void OnCancel(BaseEventData)
+UIEvents.EventTrigger,OnDeselect,void OnDeselect(BaseEventData)
+UIEvents.EventTrigger,OnDrag,void OnDrag(PointerEventData)
+UIEvents.EventTrigger,OnDrop,void OnDrop(PointerEventData)
+UIEvents.EventTrigger,OnEndDrag,void OnEndDrag(PointerEventData)
+UIEvents.EventTrigger,OnInitializePotentialDrag,void OnInitializePotentialDrag(PointerEventData)
+UIEvents.EventTrigger,OnMove,void OnMove(AxisEventData)
+UIEvents.EventTrigger,OnPointerClick,void OnPointerClick(PointerEventData)
+UIEvents.EventTrigger,OnPointerDown,void OnPointerDown(PointerEventData)
+UIEvents.EventTrigger,OnPointerEnter,void OnPointerEnter(PointerEventData)
+UIEvents.EventTrigger,OnPointerExit,void OnPointerExit(PointerEventData)
+UIEvents.EventTrigger,OnPointerUp,void OnPointerUp(PointerEventData)
+UIEvents.EventTrigger,OnScroll,void OnScroll(PointerEventData)
+UIEvents.EventTrigger,OnSelect,void OnSelect(BaseEventData)
+UIEvents.EventTrigger,OnSubmit,void OnSubmit(BaseEventData)
+UIEvents.EventTrigger,OnUpdateSelected,void OnUpdateSelected(BaseEventData)
+UIEvents.EventTrigger,delegates,List<EventTrigger.Entry> delegates { get; set; }
+UIEvents.EventTrigger,triggers,List<EventTrigger.Entry> triggers { get; set; }
+UIEvents.EventTrigger.Entry,.ctor,Entry()
+UIEvents.EventTrigger.Entry,callback,EventTrigger.TriggerEvent callback
+UIEvents.EventTrigger.Entry,eventID,EventTriggerType eventID { get; set; }
+UIEvents.EventTrigger.TriggerEvent,.ctor,TriggerEvent()
+UIEvents.EventTriggerType,BeginDrag,UIEvents.EventTriggerType.BeginDrag = 13
+UIEvents.EventTriggerType,Cancel,UIEvents.EventTriggerType.Cancel = 16
+UIEvents.EventTriggerType,Deselect,UIEvents.EventTriggerType.Deselect = 10
+UIEvents.EventTriggerType,Drag,UIEvents.EventTriggerType.Drag = 5
+UIEvents.EventTriggerType,Drop,UIEvents.EventTriggerType.Drop = 6
+UIEvents.EventTriggerType,EndDrag,UIEvents.EventTriggerType.EndDrag = 14
+UIEvents.EventTriggerType,InitializePotentialDrag,UIEvents.EventTriggerType.InitializePotentialDrag = 12
+UIEvents.EventTriggerType,Move,UIEvents.EventTriggerType.Move = 11
+UIEvents.EventTriggerType,PointerClick,UIEvents.EventTriggerType.PointerClick = 4
+UIEvents.EventTriggerType,PointerDown,UIEvents.EventTriggerType.PointerDown = 2
+UIEvents.EventTriggerType,PointerEnter,UIEvents.EventTriggerType.PointerEnter = 0
+UIEvents.EventTriggerType,PointerExit,UIEvents.EventTriggerType.PointerExit = 1
+UIEvents.EventTriggerType,PointerUp,UIEvents.EventTriggerType.PointerUp = 3
+UIEvents.EventTriggerType,Scroll,UIEvents.EventTriggerType.Scroll = 7
+UIEvents.EventTriggerType,Select,UIEvents.EventTriggerType.Select = 9
+UIEvents.EventTriggerType,Submit,UIEvents.EventTriggerType.Submit = 15
+UIEvents.EventTriggerType,UpdateSelected,UIEvents.EventTriggerType.UpdateSelected = 8
+UIEvents.ExecuteEvents,CanHandleEvent,static bool CanHandleEvent<T>(GameObject)
+UIEvents.ExecuteEvents,Execute,"static bool Execute<T>(GameObject, BaseEventData, ExecuteEvents.EventFunction<T>)"
+UIEvents.ExecuteEvents,ExecuteHierarchy,"static GameObject ExecuteHierarchy<T>(GameObject, BaseEventData, ExecuteEvents.EventFunction<T>)"
+UIEvents.ExecuteEvents,GetEventHandler,static GameObject GetEventHandler<T>(GameObject)
+UIEvents.ExecuteEvents,ValidateEventData,static T ValidateEventData<T>(BaseEventData)
+UIEvents.ExecuteEvents,beginDragHandler,static ExecuteEvents.EventFunction<IBeginDragHandler> beginDragHandler { get; }
+UIEvents.ExecuteEvents,cancelHandler,static ExecuteEvents.EventFunction<ICancelHandler> cancelHandler { get; }
+UIEvents.ExecuteEvents,deselectHandler,static ExecuteEvents.EventFunction<IDeselectHandler> deselectHandler { get; }
+UIEvents.ExecuteEvents,dragHandler,static ExecuteEvents.EventFunction<IDragHandler> dragHandler { get; }
+UIEvents.ExecuteEvents,dropHandler,static ExecuteEvents.EventFunction<IDropHandler> dropHandler { get; }
+UIEvents.ExecuteEvents,endDragHandler,static ExecuteEvents.EventFunction<IEndDragHandler> endDragHandler { get; }
+UIEvents.ExecuteEvents,initializePotentialDrag,static ExecuteEvents.EventFunction<IInitializePotentialDragHandler> initializePotentialDrag { get; }
+UIEvents.ExecuteEvents,moveHandler,static ExecuteEvents.EventFunction<IMoveHandler> moveHandler { get; }
+UIEvents.ExecuteEvents,pointerClickHandler,static ExecuteEvents.EventFunction<IPointerClickHandler> pointerClickHandler { get; }
+UIEvents.ExecuteEvents,pointerDownHandler,static ExecuteEvents.EventFunction<IPointerDownHandler> pointerDownHandler { get; }
+UIEvents.ExecuteEvents,pointerEnterHandler,static ExecuteEvents.EventFunction<IPointerEnterHandler> pointerEnterHandler { get; }
+UIEvents.ExecuteEvents,pointerExitHandler,static ExecuteEvents.EventFunction<IPointerExitHandler> pointerExitHandler { get; }
+UIEvents.ExecuteEvents,pointerMoveHandler,static ExecuteEvents.EventFunction<IPointerMoveHandler> pointerMoveHandler { get; }
+UIEvents.ExecuteEvents,pointerUpHandler,static ExecuteEvents.EventFunction<IPointerUpHandler> pointerUpHandler { get; }
+UIEvents.ExecuteEvents,scrollHandler,static ExecuteEvents.EventFunction<IScrollHandler> scrollHandler { get; }
+UIEvents.ExecuteEvents,selectHandler,static ExecuteEvents.EventFunction<ISelectHandler> selectHandler { get; }
+UIEvents.ExecuteEvents,submitHandler,static ExecuteEvents.EventFunction<ISubmitHandler> submitHandler { get; }
+UIEvents.ExecuteEvents,updateSelectedHandler,static ExecuteEvents.EventFunction<IUpdateSelectedHandler> updateSelectedHandler { get; }
+UIEvents.ExecuteEvents.EventFunction,delegate,"void (T1, BaseEventData)"
+UIEvents.IBeginDragHandler,OnBeginDrag,void OnBeginDrag(PointerEventData)
+UIEvents.ICancelHandler,OnCancel,void OnCancel(BaseEventData)
+UIEvents.IDeselectHandler,OnDeselect,void OnDeselect(BaseEventData)
+UIEvents.IDragHandler,OnDrag,void OnDrag(PointerEventData)
+UIEvents.IDropHandler,OnDrop,void OnDrop(PointerEventData)
+UIEvents.IEndDragHandler,OnEndDrag,void OnEndDrag(PointerEventData)
+UIEvents.IInitializePotentialDragHandler,OnInitializePotentialDrag,void OnInitializePotentialDrag(PointerEventData)
+UIEvents.IMoveHandler,OnMove,void OnMove(AxisEventData)
+UIEvents.IPointerClickHandler,OnPointerClick,void OnPointerClick(PointerEventData)
+UIEvents.IPointerDownHandler,OnPointerDown,void OnPointerDown(PointerEventData)
+UIEvents.IPointerEnterHandler,OnPointerEnter,void OnPointerEnter(PointerEventData)
+UIEvents.IPointerExitHandler,OnPointerExit,void OnPointerExit(PointerEventData)
+UIEvents.IPointerMoveHandler,OnPointerMove,void OnPointerMove(PointerEventData)
+UIEvents.IPointerUpHandler,OnPointerUp,void OnPointerUp(PointerEventData)
+UIEvents.IScrollHandler,OnScroll,void OnScroll(PointerEventData)
+UIEvents.ISelectHandler,OnSelect,void OnSelect(BaseEventData)
+UIEvents.ISubmitHandler,OnSubmit,void OnSubmit(BaseEventData)
+UIEvents.IUpdateSelectedHandler,OnUpdateSelected,void OnUpdateSelected(BaseEventData)
+UIEvents.InputModule,ActivateModule,void ActivateModule()
+UIEvents.InputModule,ConvertPointerEventScrollDeltaToTicks,Vector2 ConvertPointerEventScrollDeltaToTicks(Vector2)
+UIEvents.InputModule,ConvertUIToolkitPointerId,int ConvertUIToolkitPointerId(PointerEventData)
+UIEvents.InputModule,DeactivateModule,void DeactivateModule()
+UIEvents.InputModule,GetNavigationEventDeviceType,NavigationDeviceType GetNavigationEventDeviceType(BaseEventData)
+UIEvents.InputModule,IsActive,bool IsActive()
+UIEvents.InputModule,IsModuleSupported,bool IsModuleSupported()
+UIEvents.InputModule,IsPointerOverGameObject,bool IsPointerOverGameObject(int)
+UIEvents.InputModule,Process,void Process()
+UIEvents.InputModule,ShouldActivateModule,bool ShouldActivateModule()
+UIEvents.InputModule,UpdateModule,void UpdateModule()
+UIEvents.InputModule,input,BaseInput input { get; }
+UIEvents.InputModule,inputOverride,BaseInput inputOverride { get; set; }
+UIEvents.MoveDirection,Down,UIEvents.MoveDirection.Down = 3
+UIEvents.MoveDirection,Left,UIEvents.MoveDirection.Left = 0
+UIEvents.MoveDirection,None,UIEvents.MoveDirection.None = 4
+UIEvents.MoveDirection,Right,UIEvents.MoveDirection.Right = 2
+UIEvents.MoveDirection,Up,UIEvents.MoveDirection.Up = 1
+UIEvents.NavigationDeviceType,Keyboard,UIEvents.NavigationDeviceType.Keyboard = 1
+UIEvents.NavigationDeviceType,NonKeyboard,UIEvents.NavigationDeviceType.NonKeyboard = 2
+UIEvents.NavigationDeviceType,Unknown,UIEvents.NavigationDeviceType.Unknown = 0
+UIEvents.PanelEventHandler,.ctor,PanelEventHandler()
+UIEvents.PanelEventHandler,IsActive,bool IsActive()
+UIEvents.PanelEventHandler,OnCancel,void OnCancel(BaseEventData)
+UIEvents.PanelEventHandler,OnDeselect,void OnDeselect(BaseEventData)
+UIEvents.PanelEventHandler,OnMove,void OnMove(AxisEventData)
+UIEvents.PanelEventHandler,OnPointerClick,void OnPointerClick(PointerEventData)
+UIEvents.PanelEventHandler,OnPointerDown,void OnPointerDown(PointerEventData)
+UIEvents.PanelEventHandler,OnPointerEnter,void OnPointerEnter(PointerEventData)
+UIEvents.PanelEventHandler,OnPointerExit,void OnPointerExit(PointerEventData)
+UIEvents.PanelEventHandler,OnPointerMove,void OnPointerMove(PointerEventData)
+UIEvents.PanelEventHandler,OnPointerUp,void OnPointerUp(PointerEventData)
+UIEvents.PanelEventHandler,OnScroll,void OnScroll(PointerEventData)
+UIEvents.PanelEventHandler,OnSelect,void OnSelect(BaseEventData)
+UIEvents.PanelEventHandler,OnSubmit,void OnSubmit(BaseEventData)
+UIEvents.PanelEventHandler,panel,IPanel panel { get; set; }
+UIEvents.PanelRaycaster,.ctor,PanelRaycaster()
+UIEvents.PanelRaycaster,IsActive,bool IsActive()
+UIEvents.PanelRaycaster,Raycast,"void Raycast(PointerEventData, List<RaycastResult>)"
+UIEvents.PanelRaycaster,eventCamera,Camera eventCamera { get; }
+UIEvents.PanelRaycaster,panel,IPanel panel { get; set; }
+UIEvents.PanelRaycaster,priority,int priority { get; }
+UIEvents.PanelRaycaster,renderOrderPriority,int renderOrderPriority { get; }
+UIEvents.PanelRaycaster,sortOrderPriority,int sortOrderPriority { get; }
+UIEvents.Physics2DRaycaster,.ctor,Physics2DRaycaster()
+UIEvents.Physics2DRaycaster,IsActive,bool IsActive()
+UIEvents.Physics2DRaycaster,Raycast,"void Raycast(PointerEventData, List<RaycastResult>)"
+UIEvents.Physics2DRaycaster,depth,int depth { get; }
+UIEvents.Physics2DRaycaster,eventCamera,Camera eventCamera { get; }
+UIEvents.Physics2DRaycaster,priority,int priority { get; }
+UIEvents.Physics2DRaycaster,renderOrderPriority,int renderOrderPriority { get; }
+UIEvents.Physics2DRaycaster,sortOrderPriority,int sortOrderPriority { get; }
+UIEvents.PhysicsRaycaster,.ctor,PhysicsRaycaster()
+UIEvents.PhysicsRaycaster,IsActive,bool IsActive()
+UIEvents.PhysicsRaycaster,Raycast,"void Raycast(PointerEventData, List<RaycastResult>)"
+UIEvents.PhysicsRaycaster,depth,int depth { get; }
+UIEvents.PhysicsRaycaster,eventCamera,Camera eventCamera { get; }
+UIEvents.PhysicsRaycaster,eventMask,LayerMask eventMask { get; set; }
+UIEvents.PhysicsRaycaster,finalEventMask,int finalEventMask { get; }
+UIEvents.PhysicsRaycaster,maxRayIntersections,int maxRayIntersections { get; set; }
+UIEvents.PhysicsRaycaster,priority,int priority { get; }
+UIEvents.PhysicsRaycaster,renderOrderPriority,int renderOrderPriority { get; }
+UIEvents.PhysicsRaycaster,sortOrderPriority,int sortOrderPriority { get; }
+UIEvents.PointerEventData,.ctor,PointerEventData(EventSystem)
+UIEvents.PointerEventData,IsPointerMoving,bool IsPointerMoving()
+UIEvents.PointerEventData,IsScrolling,bool IsScrolling()
+UIEvents.PointerEventData,Reset,void Reset()
+UIEvents.PointerEventData,ToString,string ToString()
+UIEvents.PointerEventData,Use,void Use()
+UIEvents.PointerEventData,altitudeAngle,float altitudeAngle { get; set; }
+UIEvents.PointerEventData,azimuthAngle,float azimuthAngle { get; set; }
+UIEvents.PointerEventData,button,PointerEventData.InputButton button { get; set; }
+UIEvents.PointerEventData,clickCount,int clickCount { get; set; }
+UIEvents.PointerEventData,clickTime,float clickTime { get; set; }
+UIEvents.PointerEventData,delta,Vector2 delta { get; set; }
+UIEvents.PointerEventData,displayIndex,int displayIndex { get; set; }
+UIEvents.PointerEventData,dragging,bool dragging { get; set; }
+UIEvents.PointerEventData,eligibleForClick,bool eligibleForClick { get; set; }
+UIEvents.PointerEventData,enterEventCamera,Camera enterEventCamera { get; }
+UIEvents.PointerEventData,fullyExited,bool fullyExited { get; set; }
+UIEvents.PointerEventData,hovered,List<GameObject> hovered { get; }
+UIEvents.PointerEventData,lastPress,GameObject lastPress { get; }
+UIEvents.PointerEventData,penStatus,PenStatus penStatus { get; set; }
+UIEvents.PointerEventData,pointerClick,GameObject pointerClick { get; set; }
+UIEvents.PointerEventData,pointerCurrentRaycast,RaycastResult pointerCurrentRaycast { get; set; }
+UIEvents.PointerEventData,pointerDrag,GameObject pointerDrag { get; set; }
+UIEvents.PointerEventData,pointerEnter,GameObject pointerEnter { get; set; }
+UIEvents.PointerEventData,pointerId,int pointerId { get; set; }
+UIEvents.PointerEventData,pointerPress,GameObject pointerPress { get; set; }
+UIEvents.PointerEventData,pointerPressRaycast,RaycastResult pointerPressRaycast { get; set; }
+UIEvents.PointerEventData,position,Vector2 position { get; set; }
+UIEvents.PointerEventData,pressEventCamera,Camera pressEventCamera { get; }
+UIEvents.PointerEventData,pressPosition,Vector2 pressPosition { get; set; }
+UIEvents.PointerEventData,pressure,float pressure { get; set; }
+UIEvents.PointerEventData,radius,Vector2 radius { get; set; }
+UIEvents.PointerEventData,radiusVariance,Vector2 radiusVariance { get; set; }
+UIEvents.PointerEventData,rawPointerPress,GameObject rawPointerPress { get; set; }
+UIEvents.PointerEventData,reentered,bool reentered { get; set; }
+UIEvents.PointerEventData,scrollDelta,Vector2 scrollDelta { get; set; }
+UIEvents.PointerEventData,tangentialPressure,float tangentialPressure { get; set; }
+UIEvents.PointerEventData,tilt,Vector2 tilt { get; set; }
+UIEvents.PointerEventData,twist,float twist { get; set; }
+UIEvents.PointerEventData,useDragThreshold,bool useDragThreshold { get; set; }
+UIEvents.PointerEventData,used,bool used { get; }
+UIEvents.PointerEventData,worldNormal,Vector3 worldNormal { get; set; }
+UIEvents.PointerEventData,worldPosition,Vector3 worldPosition { get; set; }
+UIEvents.PointerEventData.FramePressState,NotChanged,UIEvents.PointerEventData.FramePressState.NotChanged = 3
+UIEvents.PointerEventData.FramePressState,Pressed,UIEvents.PointerEventData.FramePressState.Pressed = 0
+UIEvents.PointerEventData.FramePressState,PressedAndReleased,UIEvents.PointerEventData.FramePressState.PressedAndReleased = 2
+UIEvents.PointerEventData.FramePressState,Released,UIEvents.PointerEventData.FramePressState.Released = 1
+UIEvents.PointerEventData.InputButton,Left,UIEvents.PointerEventData.InputButton.Left = 0
+UIEvents.PointerEventData.InputButton,Middle,UIEvents.PointerEventData.InputButton.Middle = 2
+UIEvents.PointerEventData.InputButton,Right,UIEvents.PointerEventData.InputButton.Right = 1
+UIEvents.PointerInputModule,.ctor,PointerInputModule()
+UIEvents.PointerInputModule,ActivateModule,void ActivateModule()
+UIEvents.PointerInputModule,ConvertPointerEventScrollDeltaToTicks,Vector2 ConvertPointerEventScrollDeltaToTicks(Vector2)
+UIEvents.PointerInputModule,ConvertUIToolkitPointerId,int ConvertUIToolkitPointerId(PointerEventData)
+UIEvents.PointerInputModule,DeactivateModule,void DeactivateModule()
+UIEvents.PointerInputModule,GetNavigationEventDeviceType,NavigationDeviceType GetNavigationEventDeviceType(BaseEventData)
+UIEvents.PointerInputModule,IsActive,bool IsActive()
+UIEvents.PointerInputModule,IsModuleSupported,bool IsModuleSupported()
+UIEvents.PointerInputModule,IsPointerOverGameObject,bool IsPointerOverGameObject(int)
+UIEvents.PointerInputModule,Process,void Process()
+UIEvents.PointerInputModule,ShouldActivateModule,bool ShouldActivateModule()
+UIEvents.PointerInputModule,ToString,string ToString()
+UIEvents.PointerInputModule,UpdateModule,void UpdateModule()
+UIEvents.PointerInputModule,kFakeTouchesId,const int kFakeTouchesId
+UIEvents.PointerInputModule,kMouseLeftId,const int kMouseLeftId
+UIEvents.PointerInputModule,kMouseMiddleId,const int kMouseMiddleId
+UIEvents.PointerInputModule,kMouseRightId,const int kMouseRightId
+UIEvents.PointerInputModule.MouseButtonEventData,.ctor,MouseButtonEventData()
+UIEvents.PointerInputModule.MouseButtonEventData,PressedThisFrame,bool PressedThisFrame()
+UIEvents.PointerInputModule.MouseButtonEventData,ReleasedThisFrame,bool ReleasedThisFrame()
+UIEvents.PointerInputModule.MouseButtonEventData,buttonData,PointerEventData buttonData
+UIEvents.PointerInputModule.MouseButtonEventData,buttonState,PointerEventData.FramePressState buttonState
+UIEvents.RaycastResult,Clear,void Clear()
+UIEvents.RaycastResult,ToString,string ToString()
+UIEvents.RaycastResult,depth,int depth
+UIEvents.RaycastResult,displayIndex,int displayIndex
+UIEvents.RaycastResult,distance,float distance
+UIEvents.RaycastResult,document,UIView document
+UIEvents.RaycastResult,element,Element element
+UIEvents.RaycastResult,gameObject,GameObject gameObject { get; set; }
+UIEvents.RaycastResult,index,float index
+UIEvents.RaycastResult,isValid,bool isValid { get; }
+UIEvents.RaycastResult,module,BaseRaycaster module
+UIEvents.RaycastResult,origin,Vector3 origin
+UIEvents.RaycastResult,screenPosition,Vector2 screenPosition
+UIEvents.RaycastResult,sortingGroupID,int sortingGroupID
+UIEvents.RaycastResult,sortingGroupOrder,int sortingGroupOrder
+UIEvents.RaycastResult,sortingLayer,int sortingLayer
+UIEvents.RaycastResult,sortingOrder,int sortingOrder
+UIEvents.RaycastResult,worldNormal,Vector3 worldNormal
+UIEvents.RaycastResult,worldPosition,Vector3 worldPosition
+UIEvents.RaycasterManager,GetRaycasters,static List<BaseRaycaster> GetRaycasters()
+UIEvents.StandaloneInputModule,.ctor,StandaloneInputModule()
+UIEvents.StandaloneInputModule,ActivateModule,void ActivateModule()
+UIEvents.StandaloneInputModule,ConvertPointerEventScrollDeltaToTicks,Vector2 ConvertPointerEventScrollDeltaToTicks(Vector2)
+UIEvents.StandaloneInputModule,ConvertUIToolkitPointerId,int ConvertUIToolkitPointerId(PointerEventData)
+UIEvents.StandaloneInputModule,DeactivateModule,void DeactivateModule()
+UIEvents.StandaloneInputModule,GetNavigationEventDeviceType,NavigationDeviceType GetNavigationEventDeviceType(BaseEventData)
+UIEvents.StandaloneInputModule,IsActive,bool IsActive()
+UIEvents.StandaloneInputModule,IsModuleSupported,bool IsModuleSupported()
+UIEvents.StandaloneInputModule,IsPointerOverGameObject,bool IsPointerOverGameObject(int)
+UIEvents.StandaloneInputModule,Process,void Process()
+UIEvents.StandaloneInputModule,ShouldActivateModule,bool ShouldActivateModule()
+UIEvents.StandaloneInputModule,UpdateModule,void UpdateModule()
+UIEvents.StandaloneInputModule,allowActivationOnMobileDevice,bool allowActivationOnMobileDevice { get; set; }
+UIEvents.StandaloneInputModule,cancelButton,string cancelButton { get; set; }
+UIEvents.StandaloneInputModule,forceModuleActive,bool forceModuleActive { get; set; }
+UIEvents.StandaloneInputModule,horizontalAxis,string horizontalAxis { get; set; }
+UIEvents.StandaloneInputModule,inputActionsPerSecond,float inputActionsPerSecond { get; set; }
+UIEvents.StandaloneInputModule,inputMode,StandaloneInputModule.InputMode inputMode { get; }
+UIEvents.StandaloneInputModule,repeatDelay,float repeatDelay { get; set; }
+UIEvents.StandaloneInputModule,submitButton,string submitButton { get; set; }
+UIEvents.StandaloneInputModule,verticalAxis,string verticalAxis { get; set; }
+UIEvents.StandaloneInputModule.InputMode,Buttons,UIEvents.StandaloneInputModule.InputMode.Buttons = 1
+UIEvents.StandaloneInputModule.InputMode,Mouse,UIEvents.StandaloneInputModule.InputMode.Mouse = 0
+UIEvents.TouchInputModule,.ctor,TouchInputModule()
+UIEvents.TouchInputModule,ActivateModule,void ActivateModule()
+UIEvents.TouchInputModule,ConvertPointerEventScrollDeltaToTicks,Vector2 ConvertPointerEventScrollDeltaToTicks(Vector2)
+UIEvents.TouchInputModule,ConvertUIToolkitPointerId,int ConvertUIToolkitPointerId(PointerEventData)
+UIEvents.TouchInputModule,DeactivateModule,void DeactivateModule()
+UIEvents.TouchInputModule,GetNavigationEventDeviceType,NavigationDeviceType GetNavigationEventDeviceType(BaseEventData)
+UIEvents.TouchInputModule,IsActive,bool IsActive()
+UIEvents.TouchInputModule,IsModuleSupported,bool IsModuleSupported()
+UIEvents.TouchInputModule,IsPointerOverGameObject,bool IsPointerOverGameObject(int)
+UIEvents.TouchInputModule,Process,void Process()
+UIEvents.TouchInputModule,ShouldActivateModule,bool ShouldActivateModule()
+UIEvents.TouchInputModule,UpdateModule,void UpdateModule()
+UIEvents.TouchInputModule,allowActivationOnStandalone,bool allowActivationOnStandalone { get; set; }
+UIEvents.TouchInputModule,forceModuleActive,bool forceModuleActive { get; set; }
+UIEvents.UIBehaviour,.ctor,UIBehaviour()
+UIEvents.UIBehaviour,IsActive,bool IsActive()
+UIEvents.UIBehaviour,IsDestroyed,bool IsDestroyed()
